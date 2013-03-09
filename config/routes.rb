@@ -1,6 +1,10 @@
 Beehouse::Application.routes.draw do
   
   root to: "houses#new"
-  resources :houses, :only => [:show, :create, :new, :edit]
+  resources :houses, :except => [:index, :show, :destroy] do
+    member do
+      get :thanks
+    end
+  end
 
 end

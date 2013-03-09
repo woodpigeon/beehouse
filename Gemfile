@@ -24,8 +24,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem "friendly_id", "~> 4.0.9" # Note: You MUST use 4.0.9 or greater for Rails 3.2.10+
-gem "puma", ">= 1.6.3"
+#gem "friendly_id", "~> 4.0.9" # Note: You MUST use 4.0.9 or greater for Rails 3.2.10+
+#gem "puma", ">= 1.6.3"
 gem "haml-rails", ">= 0.4"
 gem "twitter-bootstrap-rails", ">= 2.2.4", :group => :assets
 gem "libv8", ">= 3.11.8"
@@ -34,10 +34,10 @@ gem "therubyracer", ">= 0.11.3", :group => :assets, :platform => :ruby, :require
 gem 'jquery-rails'
 gem "mysql2", "~> 0.3.11"
 gem "factory_girl_rails", ">= 4.2.0", :group => [:development, :test]
-gem "simple_form", ">= 2.0.4"
+#gem "simple_form", ">= 2.0.4"
 gem "quiet_assets", ">= 1.0.1", :group => :development
 gem "figaro", ">= 0.5.3"
-gem "better_errors", ">= 0.6.0", :group => :devel
+gem "better_errors", ">= 0.6.0", :group => :development
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

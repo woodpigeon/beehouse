@@ -1,0 +1,9 @@
+#enter-code.row
+
+  .text-center
+
+    %h3= @house.code
+
+    =form_for(@house) do |f|
+      =f.text_field :email
+      =f.submit 'Save'
