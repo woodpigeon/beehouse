@@ -1,0 +1,16 @@
+#enter-code.row
+
+  .text-center
+
+    %h3.text-info Enter your bee house's code here
+      
+    =form_for @house, :html => {:class => 'form-inline'}  do |f|
+
+      .control-group
+        =f.text_field :code, :class => "input-medium", :placeholder =>"e.g. BGFA123456"
+        =f.submit 'Go', :class => "btn btn-primary"
+      %p.text-info
+        %i.icon-question-sign
+        You can find your code of the side of your bee house.
+        %br
+        %a{:href=>"#"}Help me find it

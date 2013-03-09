@@ -1,0 +1,1126 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-repeat:   (property)"
+			],
+			[
+				"background",
+				"background-position:   (property)"
+			],
+			[
+				"get",
+				"get_json  (function)"
+			],
+			[
+				"stat",
+				"status_id"
+			],
+			[
+				"arrayWith",
+				"NSArray.arrayWithObjects:"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/models/design.rb",
+			"settings":
+			{
+				"buffer_size": 281,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/seeds.rb",
+			"settings":
+			{
+				"buffer_size": 889,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/brand.rb",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/house.rb",
+			"settings":
+			{
+				"buffer_size": 103,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 71 files for \"favi\" (regex)\n\n/Users/tim/Sites/rails/beehouse/app/views/layouts/application.html.erb:\n   19:     <%= favicon_link_tag 'images/apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>\n   23:     <%= favicon_link_tag 'images/apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>\n   27:     <%= favicon_link_tag 'images/apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>\n   31:     <%= favicon_link_tag 'images/apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>\n   35:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>\n\n6 matches in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 845,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 1851,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Readme.md",
+			"settings":
+			{
+				"buffer_size": 1207,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 299,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/LESS-build/MIN.LESS.sublime-build",
+	"command_palette":
+	{
+		"height": 225.0,
+		"selected_items":
+		[
+			[
+				"prett",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"be",
+				"BeautifyRuby"
+			],
+			[
+				"beau",
+				"BeautifyRuby"
+			],
+			[
+				"pret",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"rub",
+				"BeautifyRuby"
+			],
+			[
+				"ruby",
+				"BeautifyRuby"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"html",
+				"Tidy HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"bea",
+				"BeautifyRuby"
+			],
+			[
+				"pre",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"prev",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"previe",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"gist",
+				"Gist: Update File"
+			],
+			[
+				"haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"gis",
+				"Gist: Create Private Gist"
+			],
+			[
+				"fetc",
+				"Fetch: Manage remote files"
+			],
+			[
+				"fetch",
+				"Fetch"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/tim/Sites/rails/beehouse/app/models/product.rb",
+		"/Users/tim/Sites/rails/beehouse/beehouse.sublime-project",
+		"/Users/tim/Sites/rails/beehouse/.gitignore",
+		"/Users/tim/Sites/rails/beehouse/Gemfile",
+		"/Users/tim/Sites/rails/beehouse/config/database.yml",
+		"/Users/tim/Sites/rails/beehouse/config/routes.rb",
+		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306213754_create_houses.rb",
+		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306214302_create_brands.rb",
+		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306214358_create_products.rb",
+		"/Users/tim/Sites/rails/beehouse/db/seeds.rb",
+		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306215449_create_designs.rb",
+		"/Users/tim/Sites/rails/beehouse/app/models/design.rb",
+		"/Users/tim/Sites/rails/beehouse/app/models/brand.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/controllers/attractions_controller.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/spec/requests/attractions_spec.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/controllers/application_controller.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/spec/spec_helper.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/staging_environment_variables.sh",
+		"/Users/tim/Sites/rails/nt/mobile-api/mobile-api.sublime-project",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/controllers/v1/realms_controller.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/boot.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/environments/production.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/environments/test.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/README.md",
+		"/Users/tim/Sites/rails/nt/mobile-api/.env",
+		"/Users/tim/Sites/rails/nt/mobile-api/.env.sample",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/routes.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/controllers/commits_controller.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/commit_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/presenters/commit_presenter.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/realm_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/Gemfile",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/librato.yml",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/controllers/v1/attractions_controller.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/import/import_vader_json.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/mongoid.yml",
+		"/Users/tim/Sites/rails/nt/mobile-api/public/index.html",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/attraction_manifest_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/one_line_details_logging.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/environments/development.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/models/asset.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/rack_initializer.rb",
+		"/Users/tim/Sites/iOS/nt/ios-handbook-app/.gitignore",
+		"/Users/tim/.zshrc",
+		"/Users/tim/Sites/rails/nt/mobile-api/.gitignore",
+		"/Users/tim/Sites/iOS/nt/app/nt-ios-gardens-app/Podfile",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/price_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/price_group_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/presenters/price_presenter.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/price_period_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/presenters/pri",
+		"/Users/tim/.aws_credentials_file_nt",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/environment.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/spec/requests/v1/realm_http_headers_spec.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/presenters/price_category_presenter.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/presenters/price_group_presenter.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/controllers/home_controller.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/public/robots.txt",
+		"/Users/tim/Sites/rails/nt/mobile-api/spec/requests/v1/attraction_http_headers_spec.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/spec/requests/v1/realm_spec.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/models/realm.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/attraction_manifest_array_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/clear_heroku_cache.sh",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/unicorn.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/Profile",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/application.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/unicorn.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/Procfile",
+		"/Users/tim/Sites/rails/nt/mobile-api/spec/requests/v1/attractions_spec.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/models/attraction.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/direction_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/notifications.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/models/direction.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/models/directions_supplementary_info.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/note_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/open_period_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/mongoid_active_model_initializers.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/asset_serializer.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/attraction_serializer.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/config/routes.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/app/controllers/attractions_controller.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/app/serializers/attraction_manifest_serializer.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/app/models/presenters/presenter.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/config/initializers/wrap_parameters.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/app/models/attraction.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/Gemfile",
+		"/Users/tim/Sites/grape/nt/mobile-api/spec/requests/attractions_spec.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/app/controllers/application_controller.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/app/models/presenters/attraction.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/spec/spec_helper.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/models/presenters/attraction.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/helpers/vader_helper.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/spec/controllers/attractions_controller_spec.rb",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/attraction_serializer.rb",
+		"/Volumes/data/Users/tim/Downloads/new.json",
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/attraction2_serializer.rb",
+		"/Volumes/data/Users/tim/Downloads/latest.json",
+		"/Users/tim/Sites/grape/nt/mobile-api/presenters/direction_presenter.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/presenters/asset_presenter.rb",
+		"/Users/tim/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/tim/Sites/grape/nt/mobile-api/spec/request/attractions_spec.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/models/attraction.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/spec/fixtures/attraction1_reordered.json",
+		"/Users/tim/Sites/grape/nt/mobile-api/helpers/handbook_inclusions.rb",
+		"/Volumes/data/Users/tim/Downloads/version0.json",
+		"/Volumes/data/Users/tim/Downloads/orig.json",
+		"/Volumes/data/Users/tim/Downloads/untitled.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/spec/models/attractions_spec.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/spec/fixtures/attraction1.json",
+		"/Users/tim/Sites/grape/nt/mobile-api/helpers/content_item_helper.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/spec/models/atraction_change_set_spec.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/spec/request/realm_change_set_spec.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/api/api_v1.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/helpers/vader_json_cleaner.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/api/errors.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/presenters/attraction_price_presenter.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/presenters/attraction_presenter.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/models/asset.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/spec/models/assets_spec.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/spec/request/attraction_change_set_spec.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/import/import_into_mongodb.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/models/price.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/import/attractions.json",
+		"/Users/tim/Sites/grape/nt/mobile-api/models/direction.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/models/directions_supplementary_info.rb",
+		"/Users/tim/Sites/iOS/nt/app/nt-ios-handbook-app/Podfile",
+		"/Users/tim/Sites/grape/nt/mobile-api/presenters/directions_supplementary_info_presenter.rb",
+		"/Users/tim/Sites/grape/nt/mobile-api/README.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"/Users/tim/Sites/rails/nt/apphub/",
+			"/Users/tim/Sites/rails/nt/apphub/git_cache/vader_api_cache",
+			"",
+			"*.rb",
+			"*",
+			"*.rb",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"favi",
+			"html",
+			"git_",
+			"commit",
+			"sha",
+			"git_",
+			"git_sha",
+			"presenter",
+			"update_hash_with_git_commit_hash_from_params",
+			"HTTP_BASIC_AUTH_USER_FOR_UPDATES",
+			"log_warning",
+			"foreman",
+			"bundler/setup",
+			"force_ssl",
+			"def build",
+			"traction with valid",
+			"traction with valid json returns a 401 u",
+			"rns an array of hashes briefly describ",
+			"post ",
+			"post",
+			",",
+			" pp",
+			" puts ",
+			" p ",
+			"p ",
+			"logger",
+			"pp ",
+			"ap ",
+			"vader",
+			"facilit",
+			" - status 503.*",
+			"Failed to  ([a-z0-9-]*) ([ \\w]*) - status 503",
+			"([ \\w]*) - status 503",
+			" (\\w*) - status 503",
+			"fjord",
+			"prices_as_an_array_of_hashes",
+			"log",
+			"pp ",
+			"logger",
+			"rails.logger",
+			"puts re",
+			"pp re",
+			"p ",
+			"puts ",
+			"pp",
+			"puts",
+			"pp",
+			"puts",
+			"pp",
+			"p ",
+			"put",
+			"puts",
+			"Parameters: ",
+			"If-Modified-Since",
+			"header",
+			"nothing",
+			"puts",
+			"pp ",
+			"pp",
+			"show",
+			"action",
+			"realm_id",
+			"mail",
+			"log_action",
+			"get_attraction",
+			"stats",
+			"clear",
+			"cach",
+			"crements version number corre",
+			"it increments version number corre",
+			"ed it increments version number corre",
+			"V1::A ttractionManifestSerializer",
+			"bund",
+			"mode",
+			"on foot",
+			"by road",
+			"r",
+			"root",
+			"roor",
+			"versions",
+			"p \"Cre",
+			"puts \"Cre",
+			"puts \"warning: no primary_asset fo",
+			"name_sortable",
+			"puts \"her",
+			"urn_id_mapp",
+			"get_attraction",
+			"rsp",
+			"URN_IDS_MAPPED_TO_PROPERTY_NAME",
+			"time_li",
+			"sustr",
+			"suppl",
+			"On foot",
+			"by ",
+			"versionless",
+			"versio",
+			"versioned_",
+			"version",
+			"json['version']",
+			"73f73f80-aa34-45d1-b806-99228d35f753",
+			"ew version if attraction data ",
+			"Packwood House Renamed",
+			"unders",
+			"stringify_keys",
+			"Warning: no web/price.note found",
+			"73f73f80-aa34-45d1-b806-99228d35f753",
+			"yay",
+			"arns",
+			"scrape",
+			"sands",
+			",",
+			"shaplandId",
+			"birth",
+			"575",
+			"168",
+			"tarn h",
+			" 88",
+			"hardy",
+			"6049",
+			"facilities_and_access_groups_compressed",
+			"access",
+			"Halwell Woods",
+			"695e032c-b11d-4e4c-b6ea-b584b9a6e802",
+			"Pitstone Windmill",
+			"3bac1a7-06bd-47d1-bdea-e09f46bb6a96",
+			"note",
+			"^,(\\d*)$",
+			"scrape"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\\n",
+			"/n",
+			"",
+			"\\n",
+			"insert into tmp (legacy_id) values ($1);",
+			"exceptions",
+			"daily_open_periods",
+			"$1\"$2\"",
+			"$1:\\n\\r\\tlatin_name: ",
+			"$1:\\n\\r\\tlatin_name: $2",
+			"$1:\\n\\r\\t$2",
+			"$2",
+			"$1:\\n\\r\\t$2",
+			"$1:\\n\\t$2",
+			"update attraction",
+			"legacy_id",
+			",",
+			"<dl>Moderate<",
+			"<ttc>$1:$2</ttc>",
+			"update gardens_plants set latitude =$2, longitude =$3 where plant_id = $1;",
+			"update plants set latitude =$2, longitude =$3 where id = $1;",
+			"0\\tMain G",
+			"$1\\n",
+			"$1",
+			"0\\tMain G",
+			"$1",
+			"./"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/models/design.rb",
+					"settings":
+					{
+						"buffer_size": 281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "db/seeds.rb",
+					"settings":
+					{
+						"buffer_size": 889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/brand.rb",
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/house.rb",
+					"settings":
+					{
+						"buffer_size": 103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								98,
+								98
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 1314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								576,
+								576
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"settings":
+					{
+						"buffer_size": 845,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										126,
+										130
+									],
+									[
+										294,
+										298
+									],
+									[
+										462,
+										466
+									],
+									[
+										626,
+										630
+									],
+									[
+										765,
+										769
+									],
+									[
+										783,
+										787
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								131,
+								131
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 1851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1460,
+								1460
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 344.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Readme.md",
+					"settings":
+					{
+						"buffer_size": 1207,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6,
+								6
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/home/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								247,
+								247
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 114.0
+	},
+	"output.find_results":
+	{
+		"height": 114.0
+	},
+	"output.git":
+	{
+		"height": 223.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 110.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"mig",
+				"db/migrate/20130306213754_create_houses.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"rea",
+				"README.md"
+			],
+			[
+				"test",
+				"config/environments/test.rb"
+			],
+			[
+				"prod",
+				"config/environments/production.rb"
+			],
+			[
+				"ream",
+				"README.md"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"mong",
+				"config/mongoid.yml"
+			],
+			[
+				"pr",
+				"config/environments/production.rb"
+			],
+			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"dev",
+				"config/environments/development.rb"
+			],
+			[
+				"pro",
+				"config/environments/production.rb"
+			],
+			[
+				"envir",
+				"config/environment.rb"
+			],
+			[
+				"appl",
+				"config/application.rb"
+			],
+			[
+				"tet",
+				"config/environments/test.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"g",
+				"Gemfile"
+			],
+			[
+				"inc",
+				"helpers/handbook_inclusions.rb"
+			],
+			[
+				".erb",
+				"app/views/gardens/plants/_form.html.erb"
+			],
+			[
+				"_attr",
+				"app/views/api/v1/attractions/_attraction.json.jbuilder"
+			],
+			[
+				"updates",
+				"app/views/api/v1/realm/updates.json.jbuilder"
+			],
+			[
+				"appli",
+				"config/application.rb"
+			],
+			[
+				"update",
+				"app/views/api/v1/realm/updates.json.jbuilder"
+			],
+			[
+				"em",
+				"db/migrate/20120202205354_add_even_more_indexes.rb"
+			],
+			[
+				"applica",
+				"config/application.rb"
+			],
+			[
+				".rake",
+				"lib/tasks/vader_api_cache.rake"
+			],
+			[
+				"rake",
+				"Rakefile"
+			],
+			[
+				"vader",
+				"app/helpers/vader_api_cache_helper.rb"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"deplo",
+				"config/deploy.rb"
+			],
+			[
+				"abi",
+				"app/models/ability.rb"
+			],
+			[
+				"boot",
+				"config/boot.rb"
+			],
+			[
+				"bee",
+				"app/models/bee.rb"
+			],
+			[
+				"apl",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"ftp",
+				"app/models/non_ar_models/ftp_attraction_image_deployer.rb"
+			],
+			[
+				"depl",
+				"config/deploy.rb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"plant",
+				"app/models/gardens/plant.rb"
+			],
+			[
+				"",
+				"app/controllers/gardens/guides_controller.rb"
+			],
+			[
+				"guides",
+				"app/controllers/gardens/guides_controller.rb"
+			],
+			[
+				"models/",
+				"app/models/ability.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 339.0,
+	"status_bar_visible": true
+}
