@@ -24,6 +24,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem "friendly_id", "~> 4.0.9" # Note: You MUST use 4.0.9 or greater for Rails 3.2.10+
 gem "puma", ">= 1.6.3"
 gem "haml-rails", ">= 0.4"
 gem "twitter-bootstrap-rails", ">= 2.2.4", :group => :assets

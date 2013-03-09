@@ -52,6 +52,7 @@ GEM
       railties (>= 3.0.0)
     figaro (0.6.1)
       rails (>= 3, < 5)
+    friendly_id (4.0.9)
     haml (4.0.0)
       tilt
     haml-rails (0.4)
@@ -155,6 +156,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   factory_girl_rails (>= 4.2.0)
   figaro (>= 0.5.3)
+  friendly_id (~> 4.0.9)
   haml-rails (>= 0.4)
   jquery-rails
   libv8 (>= 3.11.8)
