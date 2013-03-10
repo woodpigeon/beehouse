@@ -3,7 +3,10 @@
   .text-center
 
     %h3= @house.code
+    %h3= @house.state
 
     =form_for(@house) do |f|
+      -@house.errors.full_messages.each do |msg|
+        %p= msg
       =f.text_field :email
       =f.submit 'Save'
