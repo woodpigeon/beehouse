@@ -15,7 +15,7 @@ end
 group :development, :test do
   gem "rspec-rails", "~> 2.0"
   gem 'sqlite3'
-  gem 'thin'
+  #gem 'thin'
 end
 
 # Gems used only for assets and not required
