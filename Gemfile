@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+ruby '1.9.3' # explicitly set ruby version, required to get mongoid to work on Heroku
+
 gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
