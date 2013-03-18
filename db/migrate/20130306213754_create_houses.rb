@@ -2,7 +2,7 @@ class CreateHouses < ActiveRecord::Migration
   def change
     create_table :houses do |t|
       
-      t.integer :product_id
+      t.integer :product_id. :null => true
       t.string :code
       t.string :email
       

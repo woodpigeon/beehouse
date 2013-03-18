@@ -16,7 +16,7 @@ end
 group :development, :test do
   gem "rspec-rails", "~> 2.0"
   gem 'sqlite3'
-  #gem 'thin'
+  gem 'thin'
 end
 
 # Gems used only for assets and not required
@@ -31,6 +31,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'custom_error_message' # using ^Message eg in validates_... whill exclude the attraibute name
 #gem "friendly_id", "~> 4.0.9" # Note: You MUST use 4.0.9 or greater for Rails 3.2.10+
 #gem "puma", ">= 1.6.3"
 gem "haml-rails"#, ">= 0.4"

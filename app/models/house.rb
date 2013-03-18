@@ -1,8 +1,25 @@
 class House < ActiveRecord::Base
   
-  attr_accessible :brand_id, :code, :style, :email
+  attr_accessible :brand_id, :code, :style, :email, :postcode
   
-  # validates_presence_of :code
+  belongs_to :product
+
+  before_create :generate_uuid
+
+  def to_param
+    self.uuid
+  end
+
+  protected
+
+  def generate_uuid
+    self.uuid = loop do
+      random_uuid = SecureRandom.urlsafe_base64.downcase
+      break random_uuid unless House.where(uuid: random_uuid).exists?
+    end
+  end
+
+  #validates_presence_of :code
   # validates_uniqueness_of :code
  
 
@@ -26,16 +43,23 @@ class House < ActiveRecord::Base
       transition :s2 => :s3
     end
 
+    event :reopen do
+      transition :s3 => :s2
+    end
+
     state :s2 do
       validates_presence_of :code
       validates_uniqueness_of :code
-    end
+      # Note the ^ is a custom_error_message thing to prevent the attribute name from being prepended to the message
+      validates_presence_of :product_id, :message => "^Sorry, we don't recognise this code. Please check it and try again."    end
 
     state :s3 do
-      validates_presence_of :email
+      validates_presence_of :email, :postcode
     end
 
   end
+
+
 
   # def put_on_seatbelt
   #   ...

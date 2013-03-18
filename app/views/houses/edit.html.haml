@@ -1,12 +1,61 @@
-#enter-code.row
 
-  .text-center
+:css
+  div.control-group div.controls { margin-left:40px; }
+  div.control-group .control-label { width:50px; }
 
-    %h3= @house.code
-    %h3= @house.state
+#enter-code
 
-    =form_for(@house) do |f|
-      -@house.errors.full_messages.each do |msg|
-        %p= msg
-      =f.text_field :email
-      =f.submit 'Save'
+  .span4.offset4
+
+    =simple_form_for(@house, :html => {:class => 'form-horizontal'} ) do |f|
+
+      .row 
+        %h2 Your beehouse
+        %p.text-info Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
+    
+      .row.text-center
+
+
+        %table.table
+          %thead
+            %tr
+              %th
+              %th
+              %th
+          %tbody
+            %tr
+              %td
+              %td b
+              %td c
+            %tr
+              %td 1
+              %td 2
+              %td 3
+            %tr
+              %td x
+              %td y
+              %td z
+        
+      .row.text-center
+
+      
+      
+        -@house.errors.full_messages.each do |msg|
+          %p= msg
+        =f.input :email
+        =f.input :postcode
+        =f.submit 'Submit', :class => 'btn btn-primary'
+          
+
+    .row.text-center.alert.alert-block.text-left
+    
+      %p
+        %strong Debugging information
+      %p 
+        Organisation: 
+        %em
+          = @house.product.brand.name
+      %p 
+        Product:
+        %em
+          =@house.product.name
