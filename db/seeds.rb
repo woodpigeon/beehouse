@@ -16,9 +16,9 @@ design = Design.create!({ name: 'Initial design',
                           vertical_tubes: 3,
                           horizontal_tubes: 3 })
 
-brand_1 = Brand.create!({ name: 'Bee Guardian Foundation', logo: 'bgf.png', tag: "BGF" })
-brand_2 = Brand.create!({ name: 'Bristol Zoo', logo: 'bz.png', tag: "BRZ"  })
+brand_1 = Brand.create!({ name: 'Bee Guardian Foundation', logo: 'bgf.png', tag: "BG" })
+brand_2 = Brand.create!({ name: 'Bristol Zoo', logo: 'bz.png', tag: "BZ"  })
 
-Product.create!({name: 'Latest run', code: "A", brand: brand_1, design: design})
-Product.create!({name: 'Beta', code: "X", brand: brand_2, design: design})
+Product.create!({name: 'Latest run', code: "AA", brand: brand_1, design: design})
+Product.create!({name: 'Beta', code: "XX", brand: brand_2, design: design})
 
