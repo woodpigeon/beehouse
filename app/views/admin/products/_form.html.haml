@@ -1,0 +1,15 @@
+= simple_form_for([:admin, @product]) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.label :brand
+    = f.collection_select :brand_id, Brand.all, :id, :name
+    = f.input :range_start
+    = f.input :range_end
+    = f.input :name
+    
+    = f.label :design
+    = f.collection_select :design_id, Design.all, :id, :name
+
+  .form-actions
+    = f.button :submit

@@ -19,21 +19,7 @@ class House < ActiveRecord::Base
     end
   end
 
-  #validates_presence_of :code
-  # validates_uniqueness_of :code
- 
-
-  # def to_param
-  #   self.code
-  # end
-
   state_machine :initial => :s1 do
-
-    # before_transition :parked => any - :parked, :do => :put_on_seatbelt
-    # after_transition any => :parked do |vehicle, transition|
-    #   vehicle.seatbelt = 'off'
-    # end
-    # around_transition :benchmark
 
     event :step1 do
       transition :s1 => :s2
@@ -50,6 +36,7 @@ class House < ActiveRecord::Base
     state :s2 do
       validates_presence_of :code
       validates_uniqueness_of :code
+      validates_numericality_of :code
       # Note the ^ is a custom_error_message thing to prevent the attribute name from being prepended to the message
       validates_presence_of :product_id, :message => "^Sorry, we don't recognise this code. Please check it and try again."    end
 
@@ -60,18 +47,6 @@ class House < ActiveRecord::Base
     end
 
   end
-
-
-
-  # def put_on_seatbelt
-  #   ...
-  # end
-
-  # def benchmark
-  #   ...
-  #   yield
-  #   ...
-  # end
 
 
 end

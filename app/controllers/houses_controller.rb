@@ -1,25 +1,9 @@
 
-class String
 
-  def brand_tag
-    self.length > 1 ? self[0,2] : ""
-  end
-
-  def product_code
-    self.length > 3 ? self[2,2] : ""
-  end
-
-  # def house_number
-  #   self.length > 3 ? self[2,2] : ""
-  # end
-
-end
 
 class HousesController < ApplicationController
 
   respond_to :html
-
-
 
   def create
  
@@ -27,11 +11,8 @@ class HousesController < ApplicationController
 
     # Find the brand and product from the code
     unless @house.code.nil?
-      @brand = Brand.find_by_tag(@house.code.brand_tag)
-      unless @brand.nil?
-        @product = @brand.products.where(:code => @house.code.product_code).first
-        @house.product = @product unless @product.nil?
-      end
+      @product = Product.find_by_range(@house.code.to_i)
+      @house.product = @product unless @product.nil?
     end
 
     respond_to do |format|

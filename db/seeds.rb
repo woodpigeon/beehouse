@@ -19,6 +19,6 @@ design = Design.create!({ name: 'Initial design',
 brand_1 = Brand.create!({ name: 'Bee Guardian Foundation', logo: 'bgf.png', tag: "BG" })
 brand_2 = Brand.create!({ name: 'Bristol Zoo', logo: 'bz.png', tag: "BZ"  })
 
-Product.create!({name: 'Latest run', code: "AA", brand: brand_1, design: design})
-Product.create!({name: 'Beta', code: "XX", brand: brand_2, design: design})
+Product.create!({name: 'Model 1', brand: brand_1, design: design, range_start: 1000, range_end: 1999})
+Product.create!({name: 'Beta', brand: brand_2, design: design, range_start: 2000, range_end: 2999})
 

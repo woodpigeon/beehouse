@@ -1,0 +1,26 @@
+%h1 Products
+
+%table
+  %tr
+    %th Brand
+    %th Range start
+    %th Range end
+    %th Name
+    %th
+    %th
+    %th
+
+  - @products.each do |product|
+    %tr
+      %td= product.brand.name unless product.brand.nil?
+      %td= product.range_start
+      %td= product.range_end
+      %td= product.name
+
+      %td= link_to 'Show', [:admin, product]
+      %td= link_to 'Edit', edit_admin_product_path(product)
+      %td= link_to 'Destroy', [:admin, product], :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Product', new_admin_product_path
