@@ -1,18 +1,32 @@
-#enter-code.row
+#enter-code
 
-  .text-center
+  .span4.offset4
+  
+    .row.text-center
 
-    %h3.text-info Enter your bee house's code here
-      
-    =form_for @house, :html => {:class => 'form-inline'}  do |f|
-      -@house.errors.full_messages.each do |msg|
-        %p= msg
-      .control-group
-        =f.text_field :code, :class => "input-medium", :placeholder =>"e.g. BGFA123456"
-        =f.submit 'Go', :class => "btn btn-primary"
-      %p.text-info
-        %i.icon-question-sign
-        You can find your code of the side of your bee house.
+      %h3.text-info Enter your bee house's code here
+        
+      =form_for @house, :html => {:class => 'form-inline'}  do |f|
+        -@house.errors.full_messages.each do |msg|
+          %p= msg
+        .control-group
+          =f.text_field :code, :class => "input-medium", :placeholder =>"e.g. BGAA1234567"
+          =f.submit 'Go', :class => "btn btn-primary"
+        %p.text-info
+          %i.icon-question-sign
+          You can find your code of the side of your bee house.
+          %br
+          %a{:href=>"#"}Help me find it
+
+
+  .span6.offset3
+    .row.text-center.alert.alert-block.text-left
+    
+      %p
+        %strong Development information
+        %p The code is the following format
+        %p <strong>BG</strong>AA1234567 - organisation e.g. Bee Guardian Foundation
+        %p BG<strong>AA</strong>1234567 - product code e.g. BGF production run 1 with 6 tubes
+        %p BGAA<strong>1234567</strong> - house number for this product run
         %br
-        %a{:href=>"#"}Help me find it
-
+        %p For testing purposes use BGAAxxxxxx (any digits) - you can only use a code once.

@@ -1,7 +1,4 @@
 
-:css
-  div.control-group div.controls { margin-left:40px; }
-  div.control-group .control-label { width:50px; }
 
 #enter-code
 
@@ -15,6 +12,11 @@
     
       .row.text-center
 
+        .alert.alert-block.text-left
+          N.B. This isnt finished of course!
+          Here will be a representation of the tube
+          configuration with the ability to select the colour for each, and whether each 
+          is empty/is leaf-covered/is mud-covered. Work in progress.
 
         %table.table
           %thead
@@ -24,9 +26,9 @@
               %th
           %tbody
             %tr
-              %td
-              %td b
-              %td c
+              %td.pink
+              %td.yellow b
+              %td.lavender c
             %tr
               %td 1
               %td 2
@@ -38,12 +40,13 @@
         
       .row.text-center
 
-      
-      
-        -@house.errors.full_messages.each do |msg|
-          %p= msg
-        =f.input :email
-        =f.input :postcode
+        - if notification = f.error_notification
+          .alert.alert-error
+            <a class="close" data-dismiss="alert" href="#">&times;</a>
+            = notification 
+        
+        =f.input :email, :label => "Your email *", :input_html => {:class => "input-medium" }
+        =f.input :postcode,  :label => "Your postcode *", :input_html => {:class => "input-medium" }
         =f.submit 'Submit', :class => 'btn btn-primary'
           
 
