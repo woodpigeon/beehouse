@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/alexdunae/validates_email_format_of.git
+  revision: 46b832f7c778cc73f45ebc84cffba03c33294928
+  specs:
+    validates_email_format_of (1.5.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -80,7 +86,6 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.21)
     multi_json (1.6.1)
-    mysql2 (0.3.11)
     pg (0.14.1)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
@@ -172,7 +177,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   libv8 (>= 3.11.8)
-  mysql2 (~> 0.3.11)
+  pg
   quiet_assets (>= 1.0.1)
   rails (= 3.2.12)
   rspec-rails (~> 2.0)
@@ -184,3 +189,4 @@ DEPENDENCIES
   twitter-bootstrap-rails (>= 2.2.4)
   uglifier (>= 1.0.3)
   unicorn
+  validates_email_format_of!

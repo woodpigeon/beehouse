@@ -6,12 +6,18 @@ base: &base
   pool: 5
   timeout: 5000
 
+# development:
+#   <<: *base
+#   host: localhost
+#   database: beehouse_development
+#   username: <%= ENV['db_user'] %>
+#   password: <%= ENV['db_password'] %>
+
 development:
-  <<: *base
+  adapter: postgresql
   host: localhost
+  encoding: unicode
   database: beehouse_development
-  username: <%= ENV['db_user'] %>
-  password: <%= ENV['db_password'] %>
 
 test:
   adapter: sqlite3

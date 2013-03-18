@@ -45,8 +45,16 @@
             <a class="close" data-dismiss="alert" href="#">&times;</a>
             = notification 
         
-        =f.input :email, :label => "Your email *", :input_html => {:class => "input-medium" }
-        =f.input :postcode,  :label => "Your postcode *", :input_html => {:class => "input-medium" }
+        =f.input :email, 
+                 :label => "Your email *", 
+                 :wrapper => :bootstrap, 
+                 :placeholder => "e.g. me@gmail.com",
+                 :input_html => {:class => "input-medium" }
+        =f.input :postcode, 
+                 :label => "Your postcode *", 
+                 :wrapper => :bootstrap, 
+                 :placeholder => "e.g. AA1 1AA",
+                 :input_html => {:class => "input-medium" }
         =f.submit 'Submit', :class => 'btn btn-primary'
           
 

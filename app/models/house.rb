@@ -55,6 +55,8 @@ class House < ActiveRecord::Base
 
     state :s3 do
       validates_presence_of :email, :postcode
+      validates_email_format_of :email
+
     end
 
   end

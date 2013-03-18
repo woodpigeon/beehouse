@@ -14,9 +14,9 @@
 ActiveRecord::Schema.define(:version => 20130318112331) do
 
   create_table "brands", :force => true do |t|
-    t.string   "name",       :null => false
-    t.string   "logo",       :null => false
-    t.string   "tag",        :null => false
+    t.string   "name"
+    t.string   "logo"
+    t.string   "tag"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -41,10 +41,10 @@ ActiveRecord::Schema.define(:version => 20130318112331) do
   end
 
   create_table "products", :force => true do |t|
-    t.string   "brand_id",   :null => false
-    t.string   "design_id",  :null => false
-    t.string   "name",       :null => false
-    t.string   "code",       :null => false
+    t.integer  "brand_id"
+    t.integer  "design_id"
+    t.string   "name"
+    t.string   "code"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

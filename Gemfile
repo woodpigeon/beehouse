@@ -31,6 +31,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'validates_email_format_of', :git => 'git://github.com/alexdunae/validates_email_format_of.git'
+gem 'pg'
 gem 'custom_error_message' # using ^Message eg in validates_... whill exclude the attraibute name
 #gem "friendly_id", "~> 4.0.9" # Note: You MUST use 4.0.9 or greater for Rails 3.2.10+
 #gem "puma", ">= 1.6.3"
@@ -41,7 +43,7 @@ gem "libv8", ">= 3.11.8"
 
 gem 'state_machine'
 gem 'jquery-rails'
-gem "mysql2", "~> 0.3.11"
+#gem "mysql2", "~> 0.3.11"
 gem "factory_girl_rails", ">= 4.2.0", :group => [:development, :test]
 gem "simple_form", ">= 2.0.4"
 gem "quiet_assets", ">= 1.0.1", :group => :development
