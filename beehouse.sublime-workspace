@@ -31,6 +31,94 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/views/houses/new.html.haml",
+			"settings":
+			{
+				"buffer_size": 873,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/admin/products_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1770,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/controllers/admin/products_controller_spec.rb",
+			"settings":
+			{
+				"buffer_size": 6373,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/admin_products.rb",
+			"settings":
+			{
+				"buffer_size": 199,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/views/admin/products/edit.html.haml_spec.rb",
+			"settings":
+			{
+				"buffer_size": 724,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/views/admin/products/index.html.haml_spec.rb",
+			"settings":
+			{
+				"buffer_size": 661,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/views/admin/products/new.html.haml_spec.rb",
+			"settings":
+			{
+				"buffer_size": 712,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/views/admin/products/show.html.haml_spec.rb",
+			"settings":
+			{
+				"buffer_size": 453,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/admin/products/_form.html.haml",
+			"settings":
+			{
+				"buffer_size": 366,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/admin/products/index.html.haml",
+			"settings":
+			{
+				"buffer_size": 567,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/product.rb",
+			"settings":
+			{
+				"buffer_size": 437,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/LESS-build/MIN.LESS.sublime-build",
 	"command_palette":
@@ -212,19 +300,37 @@
 	},
 	"file_history":
 	[
-		"/Users/tim/Sites/rails/beehouse/api.ntmobile.org.csr",
 		"/Users/tim/Sites/rails/beehouse/app/models/house.rb",
+		"/Users/tim/Sites/rails/beehouse/app/models/product.rb",
+		"/Users/tim/Sites/rails/beehouse/db/seeds.rb",
+		"/Users/tim/Sites/rails/beehouse/app/controllers/houses_controller.rb",
+		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306213754_create_houses.rb",
+		"/Users/tim/Sites/rails/beehouse/app/controllers/admin/products_controller.rb",
+		"/Users/tim/Sites/rails/beehouse/app/helpers/admin/products_helper.rb",
+		"/Users/tim/Sites/rails/beehouse/app/models/admin/product.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/controllers/admin/products_controller_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/factories/admin_products.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/helpers/admin/products_helper_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/models/admin/product_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/requests/admin/admin_products_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/routing/admin/products_routing_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/views/admin/products/edit.html.haml_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/views/admin/products/index.html.haml_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/views/admin/products/new.html.haml_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/views/admin/products/show.html.haml_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/config/routes.rb",
+		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/index.html.haml",
+		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/edit.html.haml",
+		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/_form.html.haml",
+		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/show.html.haml",
+		"/Users/tim/Sites/rails/beehouse/api.ntmobile.org.csr",
 		"/Users/tim/Sites/rails/beehouse/Gemfile",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/edit.html.haml",
-		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306213754_create_houses.rb",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306214302_create_brands.rb",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306214358_create_products.rb",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306215449_create_designs.rb",
 		"/Users/tim/Sites/rails/beehouse/app/views/home/index.html.erb",
-		"/Users/tim/Sites/rails/beehouse/app/controllers/houses_controller.rb",
-		"/Users/tim/Sites/rails/beehouse/config/routes.rb",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/thanks.html.haml",
-		"/Users/tim/Sites/rails/beehouse/db/seeds.rb",
 		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/houses.css.scss",
 		"/Users/tim/Sites/rails/beehouse/app/views/layouts/application.html.erb",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/new.html.haml",
@@ -250,7 +356,6 @@
 		"/Users/tim/Sites/rails/beehouse/Readme.md",
 		"/Users/tim/Sites/rails/beehouse/app/views/home/index.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/home.css.scss",
-		"/Users/tim/Sites/rails/beehouse/app/models/product.rb",
 		"/Users/tim/Sites/rails/beehouse/beehouse.sublime-project",
 		"/Users/tim/Sites/rails/beehouse/.gitignore",
 		"/Users/tim/Sites/rails/nt/mobile-api/app/controllers/attractions_controller.rb",
@@ -322,24 +427,7 @@
 		"/Users/tim/Sites/grape/nt/mobile-api/app/controllers/attractions_controller.rb",
 		"/Users/tim/Sites/grape/nt/mobile-api/app/serializers/attraction_manifest_serializer.rb",
 		"/Users/tim/Sites/grape/nt/mobile-api/app/models/presenters/presenter.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/config/initializers/wrap_parameters.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/app/models/attraction.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/Gemfile",
-		"/Users/tim/Sites/grape/nt/mobile-api/spec/requests/attractions_spec.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/app/controllers/application_controller.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/app/models/presenters/attraction.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/spec/spec_helper.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/models/presenters/attraction.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/helpers/vader_helper.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/spec/controllers/attractions_controller_spec.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/attraction_serializer.rb",
-		"/Volumes/data/Users/tim/Downloads/new.json",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/attraction2_serializer.rb",
-		"/Volumes/data/Users/tim/Downloads/latest.json",
-		"/Users/tim/Sites/grape/nt/mobile-api/presenters/direction_presenter.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/presenters/asset_presenter.rb",
-		"/Users/tim/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/tim/Sites/grape/nt/mobile-api/spec/request/attractions_spec.rb"
+		"/Users/tim/Sites/grape/nt/mobile-api/config/initializers/wrap_parameters.rb"
 	],
 	"find":
 	{
@@ -347,7 +435,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 95.0,
 		"where_history":
 		[
 			"",
@@ -365,6 +453,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			":admin_product",
+			"@admin_product",
+			"Admin::Product",
 			"        =",
 			"thin",
 			"coff",
@@ -489,10 +580,7 @@
 			"575",
 			"168",
 			"tarn h",
-			" 88",
-			"hardy",
-			"6049",
-			"facilities_and_access_groups_compressed"
+			" 88"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -500,6 +588,9 @@
 		"regex": true,
 		"replace_history":
 		[
+			":product",
+			"@product",
+			"Product",
 			"\\n",
 			"/n",
 			"",
@@ -537,8 +628,295 @@
 	"groups":
 	[
 		{
+			"selected": 10,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/views/houses/new.html.haml",
+					"settings":
+					{
+						"buffer_size": 873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								873,
+								873
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/admin/products_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1770,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1312,
+								1312
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 497.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "spec/controllers/admin/products_controller_spec.rb",
+					"settings":
+					{
+						"buffer_size": 6373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "spec/factories/admin_products.rb",
+					"settings":
+					{
+						"buffer_size": 199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "spec/views/admin/products/edit.html.haml_spec.rb",
+					"settings":
+					{
+						"buffer_size": 724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "spec/views/admin/products/index.html.haml_spec.rb",
+					"settings":
+					{
+						"buffer_size": 661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "spec/views/admin/products/new.html.haml_spec.rb",
+					"settings":
+					{
+						"buffer_size": 712,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "spec/views/admin/products/show.html.haml_spec.rb",
+					"settings":
+					{
+						"buffer_size": 453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/admin/products/_form.html.haml",
+					"settings":
+					{
+						"buffer_size": 366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/admin/products/index.html.haml",
+					"settings":
+					{
+						"buffer_size": 567,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/models/product.rb",
+					"settings":
+					{
+						"buffer_size": 437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								437,
+								437
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

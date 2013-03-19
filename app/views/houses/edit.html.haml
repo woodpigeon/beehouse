@@ -1,8 +1,18 @@
 
+:css
+  .bees { margin:auto; }
+  .tubes { width: 290px; height:290px; text-align:center; margin:auto;}
+  .tube { float:left; width:90px; height:90px; text-align:center;}
+  .pink { background-image:url(/assets/pink.png); }
+  .yellow { background-image:url(/assets/yellow.png); }
+  .lavender { background-image:url(/assets/lavender.png); }
+  .material { width:90px; height:90px; }
+  .mud { background-image:url(/assets/mud.png); }
+  .leaf { background-image:url(/assets/leaf.png); }
 
 #enter-code
 
-  .span4.offset4
+  .span6.offset3
 
     =simple_form_for(@house, :html => {:class => 'form-horizontal'} ) do |f|
 
@@ -14,30 +24,46 @@
 
         .alert.alert-block.text-left
           N.B. This isnt finished of course!
-          Here will be a representation of the tube
-          configuration with the ability to select the colour for each, and whether each 
-          is empty/is leaf-covered/is mud-covered. Work in progress.
 
-        %table.table
-          %thead
-            %tr
-              %th
-              %th
-              %th
-          %tbody
-            %tr
-              %td.pink
-              %td.yellow b
-              %td.lavender c
-            %tr
-              %td 1
-              %td 2
-              %td 3
-            %tr
-              %td x
-              %td y
-              %td z
+      .row.text-center
+        .tubes
+          .tube.pink
+            .material.leaf
+
+          .tube.yellow
+            .material.mud
+
+          .tube.lavender
+            .material.mud
+
+          .tube.yellow
+            .material.mud
+
+          .tube.pink
+            .material.leaf
+          
+          .tube.yellow
+            .material.leaf
+
+          .tube.pink
+            .material.leaf
+
+          .tube.yellow
+            .material.mud
+
+          .tube.lavender
+            .material.leaf
+
+      .row
+        .bees
         
+          .span3
+            %h4 Leafcutter bee
+            %img{:src => '/assets/leafcutter.jpg'}
+          .span3
+            %h4 Mason bee
+            %img{:src => '/assets/mason.jpg'}
+          
       .row.text-center
 
         - if notification = f.error_notification
