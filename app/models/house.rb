@@ -22,10 +22,19 @@ class House < ActiveRecord::Base
       colors.concat (1..3).map{ 'yellow'}
       colors.concat (1..3).map{ 'lavender'}
       colors.shuffle!
+
+      materials = []
+      materials.concat (1..3).map{ 'leaf'}
+      materials.concat (1..3).map{ 'empty'}
+      materials.concat (1..3).map{ 'mud'}
+      materials.shuffle!
+
     
       # add the tubes
       (0..8).each do |i|
-        t =Tube.new(position: i, colour_code: colors[i], bee_code: 'empty')
+        t =Tube.new(position: i, 
+                    colour_code: colors[i], 
+                    bee_code: materials[i])
         house.tubes << t
         puts t.inspect
       end
