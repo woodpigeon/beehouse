@@ -25,7 +25,25 @@
               %i.icon-question-sign
               You can find your code of the side of your bee house.
               %br
-              %a{:href=>"#"}Help me find it
+              %a.btn.btn-help{:href=>"#help_find_code", :role => "button", :data => {:toggle => "modal"}} 
+                Help me find it
+
+            #help_find_code.modal.hide.fade{:tabindex => "-1", 
+                                            :role => "dialog",
+                                            "aria-labelledby" => "myModalLabel", 
+                                            "aria-hidden" => "true"}
+              .modal-header
+                %button.close{:type => "button", :data => {:dismiss => "modal"}, "aria-hidden" =>"true"}
+                  ×
+                %h3#myModalLabel How to find your code
+    
+              .modal-body
+                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. 
+                Donec sed odio dui. Sed posuere consectetur est at lobortis.
+              
+              .modal-footer
+                %button.btn{data: {dismiss: "modal"}, 'aria-hidden' =>"true"} Close
+            
 
 .row
   %br
