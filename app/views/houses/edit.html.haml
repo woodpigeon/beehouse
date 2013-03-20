@@ -1,6 +1,9 @@
 
 :css
   .debug {padding-top:20px }
+  ul li {list-style:none; }
+
+
 
 #enter-code
 
@@ -17,12 +20,13 @@
               then indicate what covering each tube has.
 
         .row.text-center
-          .tubes
+        
 
+          %ul#tubes.tubes
             -@house.tubes.each_with_index do |tube, i|
-              %div{:class =>"tube #{tube.colour_code} pos_#{i}"}
+              %li{:class =>"tube #{tube.colour_code} pos_#{i}"}
                 %div{:class =>"material #{tube.bee_code}"}
-            
+          
       .span6  
         .row
           .bees
