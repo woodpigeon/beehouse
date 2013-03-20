@@ -15,40 +15,44 @@
   </head>
   <body>
 
-    <div class="navbar navbar-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="/">Beehouse</a>
-          <div class="container nav-collapse">
-            <ul class="nav">
-              <li><%= link_to "About", "/path1"  %></li>
-              <li><%= link_to "Privacy policy", "/path2"  %></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <div id="wrap">
+      <div class="navbar navbar-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="/">Beehouse</a>
+            <div class="container nav-collapse">
+              <ul class="nav">
+                <li><%= link_to "About", "/path1"  %></li>
+                <li><%= link_to "Privacy policy", "/path2"  %></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
+
+      <div id="main" class="container clear-top">
+        <div class="row">
+         
+          <div class="span12">
+            <%= render 'layouts/messages'%>
+            <%= yield %>
+          </div>
+        </div><!--/row-->
+
+      </div> <!-- /container -->
+
     </div>
+    <footer class="footer"></footer>
 
-    <div class="container">
-      <div class="row">
-       
-        <div class="span12">
-          <%= render 'layouts/messages'%>
-          <%= yield %>
-        </div>
-      </div><!--/row-->
-
-    </div> <!-- /container -->
-
-    <!-- Javascripts
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag "application" %>
+      <!-- Javascripts
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <%= javascript_include_tag "application" %>
 
   </body>
 </html>

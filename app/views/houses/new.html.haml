@@ -1,11 +1,15 @@
-#enter-code
+#enter-code.text-center.well
+  .row
+    / .span6.offset3
+    
+    /   .row.
 
-  .span4.offset4
-  
-    .row.text-center
+    .span2
+      %img{:src => "/assets/house.png"}
 
+    .span4
       %h3.text-info Enter your bee house's code here
-        
+      %br
       =form_for @house, :html => {:class => 'form-inline'}  do |f|
         -@house.errors.full_messages.each do |msg|
           %p= msg
@@ -18,12 +22,12 @@
           %br
           %a{:href=>"#"}Help me find it
 
-
-  .span6.offset3
-    .row.text-center.alert.alert-block.text-left
+/ .row
+/   .span6.offset3
+/     .row.text-center.alert.alert-block.text-left
     
-      %p
-        %strong Development information
-      %p Ranges of codes are assigned to an organisation/design combination
-      %p For testing purposes use 1000 to 9000
-      %p You can only use a code once.
+/       %p
+/         %strong Development information
+/       %p Ranges of codes are assigned to an organisation/design combination
+/       %p For testing purposes use 1000 to 9000
+/       %p You can only use a code once.

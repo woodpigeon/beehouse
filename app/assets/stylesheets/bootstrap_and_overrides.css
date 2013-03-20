@@ -5,3 +5,31 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
+
+  body {
+    background-image:url(/assets/grad.png);
+  }
+
+  #wrap {
+    min-height: 100%;
+  }
+
+  #main {
+     overflow:auto;
+      padding-bottom:150px; /* this needs to be bigger than footer height*/
+  }
+
+  .footer {
+    position: relative;
+    margin-top: -50px; /* negative value of footer height */
+    height: 50px;
+    clear:both;
+    padding-top:20px;
+  } 
+
+/*  #main {
+    background-image: url(/assets/house.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+*/
