@@ -33,3 +33,8 @@
     background-repeat: no-repeat;
   }
 */
+.hero {
+  background-color: #fff;
+  padding:20px;
+  -webkit-border-radius:10px;
+}
