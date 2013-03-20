@@ -1,98 +1,75 @@
 
 :css
-  .bees { margin:auto; }
-  .tubes { width: 290px; height:290px; text-align:center; margin:auto;}
-  .tube { float:left; width:90px; height:90px; text-align:center;}
-  .pink { background-image:url(/assets/pink.png); }
-  .yellow { background-image:url(/assets/yellow.png); }
-  .lavender { background-image:url(/assets/lavender.png); }
-  .material { width:90px; height:90px; }
-  .mud { background-image:url(/assets/mud.png); }
-  .leaf { background-image:url(/assets/leaf.png); }
+  .debug {padding-top:20px }
 
 #enter-code
 
-  .span6.offset3
-
+  .row
     =simple_form_for(@house, :html => {:class => 'form-horizontal'} ) do |f|
-
-      .row 
-        %h2 Your beehouse
-        %p.text-info Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
     
-      .row.text-center
+      .span6
 
-        .alert.alert-block.text-left
-          N.B. This isnt finished of course!
+        .row.text-center
+          %h2 Your beehouse
+          %p.text-info 
+            %strong
+              Rearrange the tubes by colour to match your house, 
+              %br
+              then indicate what covering each tube has.
+              %br
 
-      .row.text-center
-        .tubes
-          .tube.pink
-            .material.leaf
+        .row.text-center
+          .tubes
 
-          .tube.yellow
-            .material.mud
-
-          .tube.lavender
-            .material.mud
-
-          .tube.yellow
-            .material.mud
-
-          .tube.pink
-            .material.leaf
+            -@house.tubes.each_with_index do |tube, i|
+              %div{:class =>"tube #{tube.colour_code} pos_#{i}"}
+                %div{:class =>"material #{tube.bee_code}"}
+            
+      .span6  
+        .row
+          .bees
           
-          .tube.yellow
-            .material.leaf
+            .span3
+              %h4 Leafcutter bee
+              %img{:src => '/assets/leaf.png'}
+              %img{:src => '/assets/leafcutter.jpg'}
+            .span3
+              %h4 Mason bee
+              %img{:src => '/assets/mud.png'}
+              %img{:src => '/assets/mason.jpg'}
+            
+        .row.text-center
 
-          .tube.pink
-            .material.leaf
-
-          .tube.yellow
-            .material.mud
-
-          .tube.lavender
-            .material.leaf
-
-      .row
-        .bees
-        
-          .span3
-            %h4 Leafcutter bee
-            %img{:src => '/assets/leafcutter.jpg'}
-          .span3
-            %h4 Mason bee
-            %img{:src => '/assets/mason.jpg'}
+          - if notification = f.error_notification
+            .alert.alert-error
+              <a class="close" data-dismiss="alert" href="#">&times;</a>
+              = notification 
           
-      .row.text-center
-
-        - if notification = f.error_notification
-          .alert.alert-error
-            <a class="close" data-dismiss="alert" href="#">&times;</a>
-            = notification 
-        
-        =f.input :email, 
-                 :label => "Your email *", 
-                 :wrapper => :bootstrap, 
-                 :placeholder => "e.g. me@gmail.com",
-                 :input_html => {:class => "input-medium" }
-        =f.input :postcode, 
-                 :label => "Your postcode *", 
-                 :wrapper => :bootstrap, 
-                 :placeholder => "e.g. AA1 1AA",
-                 :input_html => {:class => "input-medium" }
-        =f.submit 'Submit', :class => 'btn btn-primary'
+          =f.input :email, 
+                   :label => "Your email *", 
+                   :wrapper => :bootstrap, 
+                   :placeholder => "e.g. me@gmail.com",
+                   :input_html => {:class => "input-medium" }
+          =f.input :postcode, 
+                   :label => "Your postcode *", 
+                   :wrapper => :bootstrap, 
+                   :placeholder => "e.g. AA1 1AA",
+                   :input_html => {:class => "input-medium" }
+          =f.input :accepted_terms,
+                   :label => "Agree to terms *", 
+                   :wrapper => :bootstrap
+          =f.submit 'Submit', :class => 'btn btn-primary'
           
-
-    .row.text-center.alert.alert-block.text-left
-    
-      %p
-        %strong Debugging information
-      %p 
-        Organisation: 
-        %em
-          = @house.product.brand.name
-      %p 
-        Product:
-        %em
-          =@house.product.name
+  
+  .row.dbug.text-center
+  
+    %p
+      %strong Debugging information
+    %p 
+      Organisation: 
+      %em
+        = @house.product.brand.name
+    %p 
+      Product:
+      %em
+        =@house.product.name

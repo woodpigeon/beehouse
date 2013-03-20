@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130318220633) do
+ActiveRecord::Schema.define(:version => 20130320064749) do
 
   create_table "brands", :force => true do |t|
     t.string   "name"
@@ -33,12 +33,15 @@ ActiveRecord::Schema.define(:version => 20130318220633) do
     t.integer  "product_id"
     t.string   "code"
     t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
     t.string   "state"
     t.string   "postcode"
     t.string   "uuid"
+    t.boolean  "accepted_terms", :default => false, :null => false
   end
+
+  add_index "houses", ["product_id"], :name => "index_houses_on_product_id"
 
   create_table "products", :force => true do |t|
     t.integer  "brand_id"
@@ -50,5 +53,19 @@ ActiveRecord::Schema.define(:version => 20130318220633) do
     t.integer  "range_start"
     t.integer  "range_end"
   end
+
+  add_index "products", ["brand_id"], :name => "index_products_on_brand_id"
+  add_index "products", ["design_id"], :name => "index_products_on_design_id"
+
+  create_table "tubes", :force => true do |t|
+    t.integer  "house_id"
+    t.string   "bee_code"
+    t.string   "colour_code"
+    t.integer  "position"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "tubes", ["house_id"], :name => "index_tubes_on_house_id"
 
 end

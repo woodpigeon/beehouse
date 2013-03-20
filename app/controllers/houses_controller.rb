@@ -7,13 +7,14 @@ class HousesController < ApplicationController
 
   def create
  
-    @house = House.new(params[:house])
+    @house = House.build_me(params[:house])
+    # @house = House.new(params[:house])
 
-    # Find the brand and product from the code
-    unless @house.code.nil?
-      @product = Product.find_by_range(@house.code.to_i)
-      @house.product = @product unless @product.nil?
-    end
+    # # Find the brand and product from the code
+    # unless @house.code.nil?
+    #   @product = Product.find_by_range(@house.code.to_i)
+    #   @house.product = @product unless @product.nil?
+    # end
 
     respond_to do |format|
       if @house.step1

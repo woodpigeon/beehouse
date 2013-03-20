@@ -1,10 +1,38 @@
 class House < ActiveRecord::Base
   
-  attr_accessible :brand_id, :code, :style, :email, :postcode
+  attr_accessible :brand_id, :code, :style, :email, :postcode, :accepted_terms
   
   belongs_to :product
+  has_many :tubes
 
   before_create :generate_uuid
+
+  def self.build_me(hash)
+    house = House.new(hash)
+
+    # Find the brand and product from the code
+    unless house.code.nil?
+      product = Product.find_by_range(house.code.to_i)
+      house.product = product unless product.nil?
+
+      house.tubes = []
+
+      colors = []
+      colors.concat (1..3).map{ 'pink'}
+      colors.concat (1..3).map{ 'yellow'}
+      colors.concat (1..3).map{ 'lavender'}
+      colors.shuffle!
+    
+      # add the tubes
+      (0..8).each do |i|
+        t =Tube.new(position: i, colour_code: colors[i], bee_code: 'empty')
+        house.tubes << t
+        puts t.inspect
+      end
+    end
+    house
+
+  end
 
   def to_param
     self.uuid
