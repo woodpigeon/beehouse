@@ -15,3 +15,6 @@
 //= require twitter/bootstrap
 //= require twitter/bootstrap/bootstrap-modal
 //= require_tree .
+
+
+//= require jquery.ui.touch-punch.min

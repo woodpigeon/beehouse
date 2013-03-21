@@ -17,6 +17,7 @@ group :development, :test do
   gem "rspec-rails", "~> 2.0"
   gem 'sqlite3'
   gem 'thin'
+  gem 'rails_admin'
 end
 
 # Gems used only for assets and not required
@@ -64,3 +65,6 @@ gem "better_errors", ">= 0.6.0", :group => :development
 
 # To use debugger
 # gem 'debugger'
+
+
+gem "devise"

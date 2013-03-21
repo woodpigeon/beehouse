@@ -44,58 +44,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/houses/new.html.haml",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 1130,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/houses/edit.html.haml",
-			"settings":
-			{
-				"buffer_size": 2179,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/house.rb",
-			"settings":
-			{
-				"buffer_size": 1992,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "db/migrate/20130320064749_add_accepted_terms_to_houses.rb",
-			"settings":
-			{
-				"buffer_size": 303,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/houses.css.scss",
-			"settings":
-			{
-				"buffer_size": 1114,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/bootstrap_and_overrides.css",
-			"settings":
-			{
-				"buffer_size": 832,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 1887,
+				"buffer_size": 1853,
 				"line_ending": "Unix"
 			}
 		}
@@ -280,6 +232,17 @@
 	},
 	"file_history":
 	[
+		"/Users/tim/Sites/rails/beehouse/app/views/houses/new.html.haml",
+		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/jquery.ui.touch-punch.min.js",
+		"/Users/tim/Sites/rails/beehouse/app/views/houses/edit.html.haml",
+		"/Users/tim/Sites/rails/beehouse/app/models/house.rb",
+		"/Users/tim/Sites/rails/beehouse/db/migrate/20130320064749_add_accepted_terms_to_houses.rb",
+		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/houses.css.scss",
+		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/bootstrap_and_overrides.css",
+		"/Users/tim/Sites/rails/beehouse/app/views/layouts/application.html.erb",
+		"/Users/tim/Sites/rails/beehouse/app/views/home/index.html.erb",
+		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/application.js",
+		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/houses.js",
 		"/Users/tim/Sites/rails/beehouse/app/controllers/admin/products_controller.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/controllers/admin/products_controller_spec.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/factories/admin_products.rb",
@@ -290,10 +253,7 @@
 		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/_form.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/index.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/models/product.rb",
-		"/Users/tim/Sites/rails/beehouse/app/views/houses/edit.html.haml",
-		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/houses.css.scss",
 		"/Users/tim/Sites/rails/beehouse/app/models/tube.rb",
-		"/Users/tim/Sites/rails/beehouse/app/models/house.rb",
 		"/Users/tim/Sites/rails/beehouse/app/controllers/houses_controller.rb",
 		"/Users/tim/Sites/rails/beehouse/db/seeds.rb",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306213754_create_houses.rb",
@@ -311,10 +271,7 @@
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306214302_create_brands.rb",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306214358_create_products.rb",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306215449_create_designs.rb",
-		"/Users/tim/Sites/rails/beehouse/app/views/home/index.html.erb",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/thanks.html.haml",
-		"/Users/tim/Sites/rails/beehouse/app/views/layouts/application.html.erb",
-		"/Users/tim/Sites/rails/beehouse/app/views/houses/new.html.haml",
 		"/Users/tim/Sites/rails/beehouse/config/initializers/simple_form.rb",
 		"/Users/tim/Sites/rails/beehouse/config/initializers/simple_form_bootstrap.rb",
 		"/Users/tim/Sites/rails/beehouse/config/database.yml",
@@ -402,12 +359,7 @@
 		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/note_serializer.rb",
 		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/open_period_serializer.rb",
 		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/mongoid_active_model_initializers.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/asset_serializer.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/attraction_serializer.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/config/routes.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/app/controllers/attractions_controller.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/app/serializers/attraction_manifest_serializer.rb",
-		"/Users/tim/Sites/grape/nt/mobile-api/app/models/presenters/presenter.rb"
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/asset_serializer.rb"
 	],
 	"find":
 	{
@@ -608,101 +560,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/houses/new.html.haml",
+					"file": "Gemfile",
 					"settings":
 					{
-						"buffer_size": 1130,
+						"buffer_size": 1853,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1129,
-								1129
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/houses/edit.html.haml",
-					"settings":
-					{
-						"buffer_size": 2179,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								683,
-								683
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/models/house.rb",
-					"settings":
-					{
-						"buffer_size": 1992,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								157,
-								157
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
-						},
-						"translation.x": 1.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "db/migrate/20130320064749_add_accepted_terms_to_houses.rb",
-					"settings":
-					{
-						"buffer_size": 303,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								138,
-								138
+								418,
+								418
 							]
 						],
 						"settings":
@@ -711,84 +585,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/assets/stylesheets/houses.css.scss",
-					"settings":
-					{
-						"buffer_size": 1114,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								443,
-								443
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/assets/stylesheets/bootstrap_and_overrides.css",
-					"settings":
-					{
-						"buffer_size": 832,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								828,
-								828
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 1887,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1395,
-								1395
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 208.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -856,6 +652,10 @@
 			[
 				"gem",
 				"Gemfile"
+			],
+			[
+				"applica",
+				"app/assets/javascripts/application.js"
 			],
 			[
 				"data",
@@ -972,10 +772,6 @@
 			[
 				"em",
 				"db/migrate/20120202205354_add_even_more_indexes.rb"
-			],
-			[
-				"applica",
-				"config/application.rb"
 			],
 			[
 				".rake",
