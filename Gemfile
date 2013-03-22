@@ -17,7 +17,6 @@ group :development, :test do
   gem "rspec-rails", "~> 2.0"
   gem 'sqlite3'
   gem 'thin'
-  gem 'rails_admin'
 end
 
 # Gems used only for assets and not required
@@ -32,6 +31,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'rails_admin'
 gem 'validates_email_format_of', :git => 'git://github.com/alexdunae/validates_email_format_of.git'
 gem 'pg'
 gem 'custom_error_message' # using ^Message eg in validates_... whill exclude the attraibute name
