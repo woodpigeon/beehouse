@@ -12,8 +12,10 @@ Beehouse::Application.configure do
   config.serve_static_assets = false
 
   # Compress JavaScripts and CSS
+  config.assets.enabled = true
   config.assets.compress = true
-  #config.assets.initialize_on_precompile = false
+  config.assets.initialize_on_precompile = false
+  config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false

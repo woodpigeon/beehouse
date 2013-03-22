@@ -10,6 +10,7 @@ gem 'rails', '3.2.12'
 group :production do
   gem 'activerecord-postgresql-adapter'
   gem 'unicorn'
+  gem 'therubyracer-heroku'
 end
 
 
