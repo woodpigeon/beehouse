@@ -3,6 +3,6 @@ class Tube < ActiveRecord::Base
   #validates_presence_of :house_id, :position
   #validates_uniqueness_of :position, scope: :house_id
 
-  belongs_to :house
+  belongs_to :house, dependent: :destroy
 
 end

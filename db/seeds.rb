@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
+Tube.delete_all
 House.delete_all
 Product.delete_all
 Design.delete_all
@@ -22,3 +22,14 @@ brand_2 = Brand.create!({ name: 'Bristol Zoo', logo: 'bz.png', tag: "BZ"  })
 Product.create!({name: 'Model 1', brand: brand_1, design: design, range_start: 1000, range_end: 1999})
 Product.create!({name: 'Beta', brand: brand_2, design: design, range_start: 2000, range_end: 2999})
 
+User.create(
+    email: 'tim@woodpigeon.com',
+    password: 'HouseOfBees!',
+    password_confirmation: 'HouseOfBees!'
+  )
+
+User.create(
+    email: 'c.montesanti@beeguardianfoundation.org',
+    password: 'HouseOfBees!',
+    password_confirmation: 'HouseOfBees!'
+  )
