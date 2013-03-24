@@ -60,8 +60,10 @@ module Beehouse
     config.assets.version = '1.0'
     config.assets.compile = true
     config.assets.compress = true
-    #config.assets.initialize_on_precompile = false
-    #config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
+    
+    # these 2 requied by heroku
+    config.assets.initialize_on_precompile = false
+     config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
 
     # Don't fallback to assets pipeline if a precompiled asset is missed
     
