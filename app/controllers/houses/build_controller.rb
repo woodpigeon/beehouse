@@ -4,8 +4,7 @@ class Houses::BuildController < ApplicationController
   steps :tubes, :bees, :personal, :thanks
 
   def show
-    @house = find_house
-    @p = params
+    @house = find_house        
     render_wizard
   end
 

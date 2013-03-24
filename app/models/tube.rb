@@ -5,4 +5,6 @@ class Tube < ActiveRecord::Base
 
   belongs_to :house, dependent: :destroy
 
+  default_scope :order => [:position]
+
 end

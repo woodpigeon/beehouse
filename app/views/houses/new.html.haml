@@ -13,20 +13,22 @@
       .span5.text-left
 
         .hero
-          %h3.text-info Enter your bee house's code here
+          %h3.text-info.funky-font Enter your bee house's code here
           %br
-          =form_for @house, :html => {:class => 'form-inline'}  do |f|
-            -@house.errors.full_messages.each do |msg|
-              %p= msg
-            .control-group
-              =f.text_field :code, :class => "input-medium", :placeholder =>"e.g. 12345678"
-              =f.submit 'Go', :class => "btn btn-primary"
-            %p.text-info
-              %i.icon-question-sign
-              You can find your code of the side of your bee house.
+          %span.text-center
+            =form_for @house, :html => {:class => 'form-inline'}  do |f|
+              -@house.errors.full_messages.each do |msg|
+                %p= msg
+              .control-group
+                =f.text_field :code, :class => "input-medium", :placeholder =>"e.g. 12345678"
+                =f.submit 'Go', :class => "btn btn-primary"
               %br
-              %a.btn.btn-help{:href=>"#help_find_code", :role => "button", :data => {:toggle => "modal"}} 
-                Help me find it
+              %p.text-info.text-center
+                %i.icon-question-sign
+                You can find your code of the side of your bee house.
+                %br
+                %a.btn.btn-help{:href=>"#help_find_code", :role => "button", :data => {:toggle => "modal"}} 
+                  Help me find it
 
             #help_find_code.modal.hide.fade{:tabindex => "-1", 
                                             :role => "dialog",

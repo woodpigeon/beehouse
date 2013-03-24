@@ -1,9 +1,11 @@
 class House < ActiveRecord::Base
   
-  attr_accessible :brand_id, :code, :style, :email, :postcode, :accepted_terms, :state#, :status_event
-  
+  attr_accessible :brand_id, :code, :style, :email, :postcode, :accepted_terms, :state, :tubes
+  attr_accessible :tubes_attributes
+
   belongs_to :product
   has_many :tubes
+  accepts_nested_attributes_for :tubes
 
   before_create :generate_uuid
 
@@ -13,7 +15,10 @@ class House < ActiveRecord::Base
   # Note the ^ is a custom_error_message thing to prevent the attribute name from being prepended to the message
   validates_presence_of :product_id, :message => "^Sorry, we don't recognise this code. Please check it and try again."    
   validates_presence_of [:postcode, :email], if: :on_personal?
+  validates_email_format_of :email, if: :on_personal?
+  validates :accepted_terms, :acceptance => {:accept => true}
 
+ 
   def on_tubes?
     state == 'tubes'
   end
@@ -27,14 +32,14 @@ class House < ActiveRecord::Base
   end
 
   def self.build_me(hash)
+
     house = House.new(hash)
 
     # Find the brand and product from the code
     unless house.code.nil?
+
       product = Product.find_by_range(house.code.to_i)
       house.product = product unless product.nil?
-
-      house.tubes = []
 
       colors = []
       colors.concat (1..3).map{ 'pink'}
@@ -51,11 +56,11 @@ class House < ActiveRecord::Base
     
       # add the tubes
       (0..8).each do |i|
-        t =Tube.new(position: i, 
-                    colour_code: colors[i], 
-                    bee_code: materials[i])
-        house.tubes << t
-        puts t.inspect
+        t =house.tubes.build(position: i, 
+                             colour_code: colors[i], 
+                             bee_code: materials[i])
+        #house.tubes << t
+        
       end
     end
     house

@@ -1,5 +1,13 @@
 .row.step
 
+  %p.steps Step 2 of 3
+  %p.step-instructions
+    What's going on in your tubes?
+
+  .alert.alert-block
+    %h4 TODO!
+    Assign bee to tubes - work in progress
+
   .span3
     %br
     %h4 Leafcutter bee
@@ -13,7 +21,7 @@
     %p Mud
     %img{:src => '/assets/mason.jpg'}
     
-    %p.steps Step 2 of 3
+    
 
     =simple_form_for(@house, :url => wizard_path, :method => :put, :html => {:class => 'form-horizontal'} ) do |f|
       - @house.errors.full_messages.each do |msg|
@@ -21,8 +29,8 @@
       
       =f.hidden_field :code
 
-      .form-actions
-        = link_to 'Previous' , previous_wizard_path, :class => 'btn'
-        = f.submit 'Next', :class => 'btn btn-primary' 
-        
+      .wiz-controls
+        = link_to 'Previous' , previous_wizard_path, :class => 'btn wiz-prev'
+        = f.submit 'Next', :class => 'btn btn-primary wiz-next' 
+
 

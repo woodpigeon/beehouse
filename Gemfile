@@ -19,6 +19,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'thin'
   gem 'binding_of_caller'
+  gem "mysql2", "~> 0.3.11"
 end
 
 # Gems used only for assets and not required
@@ -47,7 +48,7 @@ gem "libv8", ">= 3.11.8"
 
 gem 'state_machine'
 gem 'jquery-rails'
-#gem "mysql2", "~> 0.3.11"
+
 gem "factory_girl_rails", ">= 4.2.0", :group => [:development, :test]
 gem "simple_form", ">= 2.0.4"
 gem "quiet_assets", ">= 1.0.1", :group => :development

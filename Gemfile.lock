@@ -106,6 +106,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.21)
     multi_json (1.7.1)
+    mysql2 (0.3.11)
     nested_form (0.3.1)
     nokogiri (1.5.9)
     orm_adapter (0.4.0)
@@ -228,6 +229,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   libv8 (>= 3.11.8)
+  mysql2 (~> 0.3.11)
   pg
   quiet_assets (>= 1.0.1)
   rails (= 3.2.12)

@@ -28,6 +28,21 @@
     padding-top:20px;
   } 
 
+  .brand  {
+    font-family: 'Coustard', serif;
+    font-weight: 400; 
+  }
+
+  .funky-font {
+    font-family: 'Coustard', serif;
+    font-weight: 400; 
+  }
+
+  .funky-font-strong {
+    font-family: 'Coustard', serif;
+    font-weight: 800; 
+  }
+
 /*  #main {
     background-image: url(/assets/house.png);
     background-position: left bottom;
@@ -39,3 +54,15 @@
   padding:20px;
   -webkit-border-radius:10px;
 }
+
+.wiz-controls {
+  border-top: 1px dashed #eee;
+  padding:10px 0;
+}
+.wiz-next {
+  float:right;
+}
+.wiz-prev {
+  float:left;
+}
+
