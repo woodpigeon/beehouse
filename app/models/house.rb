@@ -16,7 +16,7 @@ class House < ActiveRecord::Base
   validates_presence_of :product_id, :message => "^Sorry, we don't recognise this code. Please check it and try again."    
   validates_presence_of [:postcode, :email], if: :on_personal?
   validates_email_format_of :email, if: :on_personal?
-  validates :accepted_terms, :acceptance => {:accept => true}
+  validates :accepted_terms, :acceptance => {:accept => true}, if: :on_personal?
 
  
   def on_tubes?
