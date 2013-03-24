@@ -1,0 +1,28 @@
+.row.step
+
+  .span3
+    %br
+    %h4 Leafcutter bee
+    %img{:src => '/assets/leaf.png'}
+    %p Leaves
+    %img{:src => '/assets/leafcutter.jpg'}
+  .span3
+    %br
+    %h4 Mason bee
+    %img{:src => '/assets/mud.png'}
+    %p Mud
+    %img{:src => '/assets/mason.jpg'}
+    
+    %p.steps Step 2 of 3
+
+    =simple_form_for(@house, :url => wizard_path, :method => :put, :html => {:class => 'form-horizontal'} ) do |f|
+      - @house.errors.full_messages.each do |msg|
+        %li= msg
+      
+      =f.hidden_field :code
+
+      .form-actions
+        = link_to 'Previous' , previous_wizard_path, :class => 'btn'
+        = f.submit 'Next', :class => 'btn btn-primary' 
+        
+

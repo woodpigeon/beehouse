@@ -44,10 +44,10 @@
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
+			"file": "config/application.rb",
 			"settings":
 			{
-				"buffer_size": 1853,
+				"buffer_size": 3107,
 				"line_ending": "Unix"
 			}
 		}
@@ -232,18 +232,30 @@
 	},
 	"file_history":
 	[
+		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/houses.css.scss",
+		"/Users/tim/.powconfig",
+		"/Users/tim/Sites/rails/beehouse/Gemfile",
+		"/Users/tim/Sites/rails/beehouse/config/routes.rb",
+		"/Users/tim/Sites/rails/beehouse/config/environments/production.rb",
+		"/Users/tim/Sites/rails/beehouse/config/environments/development.rb",
+		"/Users/tim/Sites/rails/beehouse/config/environments/test.rb",
+		"/Users/tim/Sites/rails/beehouse/db/seeds.rb",
+		"/Users/tim/Sites/rails/beehouse/app/models/tube.rb",
+		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/application.css",
+		"/Users/tim/Sites/rails/beehouse/config/application.rb",
+		"/Volumes/data/Users/tim/Downloads/arse.csv",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/new.html.haml",
+		"/Users/tim/Sites/rails/beehouse/app/helpers/admin/products_helper.rb",
+		"/Users/tim/Sites/rails/beehouse/app/controllers/admin/products_controller.rb",
 		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/jquery.ui.touch-punch.min.js",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/edit.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/models/house.rb",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130320064749_add_accepted_terms_to_houses.rb",
-		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/houses.css.scss",
 		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/bootstrap_and_overrides.css",
 		"/Users/tim/Sites/rails/beehouse/app/views/layouts/application.html.erb",
 		"/Users/tim/Sites/rails/beehouse/app/views/home/index.html.erb",
 		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/application.js",
 		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/houses.js",
-		"/Users/tim/Sites/rails/beehouse/app/controllers/admin/products_controller.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/controllers/admin/products_controller_spec.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/factories/admin_products.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/views/admin/products/edit.html.haml_spec.rb",
@@ -253,21 +265,16 @@
 		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/_form.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/index.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/models/product.rb",
-		"/Users/tim/Sites/rails/beehouse/app/models/tube.rb",
 		"/Users/tim/Sites/rails/beehouse/app/controllers/houses_controller.rb",
-		"/Users/tim/Sites/rails/beehouse/db/seeds.rb",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306213754_create_houses.rb",
-		"/Users/tim/Sites/rails/beehouse/app/helpers/admin/products_helper.rb",
 		"/Users/tim/Sites/rails/beehouse/app/models/admin/product.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/helpers/admin/products_helper_spec.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/models/admin/product_spec.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/requests/admin/admin_products_spec.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/routing/admin/products_routing_spec.rb",
-		"/Users/tim/Sites/rails/beehouse/config/routes.rb",
 		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/edit.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/show.html.haml",
 		"/Users/tim/Sites/rails/beehouse/api.ntmobile.org.csr",
-		"/Users/tim/Sites/rails/beehouse/Gemfile",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306214302_create_brands.rb",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306214358_create_products.rb",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306215449_create_designs.rb",
@@ -280,7 +287,6 @@
 		"/Users/tim/Sites/rails/beehouse/Procfile",
 		"/Users/tim/Sites/rails/beehouse/config/environment.rb",
 		"/Users/tim/Sites/rails/beehouse/vendor/bundle/gems/mysql2-0.3.11/lib/mysql2.rb",
-		"/Users/tim/Sites/rails/beehouse/config/application.rb",
 		"/Users/tim/.bundle/config",
 		"/Users/tim/.zshenv",
 		"/Users/tim/.gemrc",
@@ -353,13 +359,7 @@
 		"/Users/tim/Sites/rails/nt/mobile-api/spec/requests/v1/attractions_spec.rb",
 		"/Users/tim/Sites/rails/nt/mobile-api/app/models/attraction.rb",
 		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/direction_serializer.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/notifications.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/models/direction.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/models/directions_supplementary_info.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/note_serializer.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/open_period_serializer.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/mongoid_active_model_initializers.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/asset_serializer.rb"
+		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/notifications.rb"
 	],
 	"find":
 	{
@@ -385,6 +385,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".compile",
+			"initialize_on_precompile",
+			"config.assets.initialize_on_precompile",
+			"RailsAdmin",
+			"devise",
+			"module Admin",
+			"admin",
 			"!\n",
 			":admin_product",
 			"@admin_product",
@@ -505,14 +512,7 @@
 			"73f73f80-aa34-45d1-b806-99228d35f753",
 			"yay",
 			"arns",
-			"scrape",
-			"sands",
-			",",
-			"shaplandId",
-			"birth",
-			"575",
-			"168",
-			"tarn h"
+			"scrape"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -565,18 +565,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
+					"file": "config/application.rb",
 					"settings":
 					{
-						"buffer_size": 1853,
+						"buffer_size": 3107,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								418,
-								418
+								2840,
+								2840
 							]
 						],
 						"settings":
@@ -584,7 +584,7 @@
 							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 323.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -654,16 +654,32 @@
 				"Gemfile"
 			],
 			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"test",
+				"config/environments/test.rb"
+			],
+			[
+				"prod",
+				"config/environments/production.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
 				"applica",
 				"app/assets/javascripts/application.js"
 			],
 			[
 				"data",
 				"config/database.yml"
-			],
-			[
-				"route",
-				"config/routes.rb"
 			],
 			[
 				"ge",
@@ -679,10 +695,6 @@
 			],
 			[
 				"rou",
-				"config/routes.rb"
-			],
-			[
-				"rout",
 				"config/routes.rb"
 			],
 			[
@@ -702,14 +714,6 @@
 				"README.md"
 			],
 			[
-				"test",
-				"config/environments/test.rb"
-			],
-			[
-				"prod",
-				"config/environments/production.rb"
-			],
-			[
 				"ream",
 				"README.md"
 			],
@@ -720,10 +724,6 @@
 			[
 				"pr",
 				"config/environments/production.rb"
-			],
-			[
-				"deve",
-				"config/environments/development.rb"
 			],
 			[
 				"dev",

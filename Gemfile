@@ -18,6 +18,7 @@ group :development, :test do
   gem "rspec-rails", "~> 2.0"
   gem 'sqlite3'
   gem 'thin'
+  gem 'binding_of_caller'
 end
 
 # Gems used only for assets and not required
@@ -32,6 +33,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'wicked'
 gem 'rails_admin'
 gem 'validates_email_format_of', :git => 'git://github.com/alexdunae/validates_email_format_of.git'
 gem 'pg'

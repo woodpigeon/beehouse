@@ -41,6 +41,8 @@ GEM
     better_errors (0.7.2)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+    binding_of_caller (0.7.1)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (2.3.1.0)
       sass (~> 3.2)
     builder (3.0.4)
@@ -54,6 +56,7 @@ GEM
     coffee-script-source (1.6.2)
     custom_error_message (1.1.1)
     daemons (1.1.9)
+    debug_inspector (0.0.2)
     devise (2.2.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -206,6 +209,9 @@ GEM
       raindrops (~> 0.7)
     warden (1.2.1)
       rack (>= 1.0)
+    wicked (0.6.0)
+      activesupport (>= 3.0.7)
+      rails (>= 3.0.7)
 
 PLATFORMS
   ruby
@@ -213,6 +219,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-postgresql-adapter
   better_errors (>= 0.6.0)
+  binding_of_caller
   coffee-rails
   custom_error_message
   devise
@@ -236,3 +243,4 @@ DEPENDENCIES
   uglifier (>= 1.0.3)
   unicorn
   validates_email_format_of!
+  wicked

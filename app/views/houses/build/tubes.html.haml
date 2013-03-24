@@ -1,0 +1,27 @@
+.row.step
+  .span9
+    %p.steps Step 1 of 3
+
+    =simple_form_for(@house, 
+                     :url => wizard_path, 
+                     :method => :put, 
+                     :html => {:class => 'form-horizontal'} ) do |f|
+      
+      =f.hidden_field :code
+
+      - if notification = f.error_notification
+        .alert.alert-error
+          <a class="close" data-dismiss="alert" href="#">&times;</a>
+          = notification 
+
+      .text-center
+
+        %ul#tubes.tubes
+          -@house.tubes.each_with_index do |tube, i|
+            %li{:class =>"tube #{tube.colour_code} pos_#{i}"}
+              %div{:class =>"material #{tube.bee_code}"}
+              
+      .form-actions
+        = link_to 'Previous' , previous_wizard_path, :class => 'btn'
+        = f.submit 'Next', :class => 'btn btn-primary' 
+        

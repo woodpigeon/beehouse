@@ -1,6 +1,4 @@
 
-
-
 class HousesController < ApplicationController
 
   respond_to :html
@@ -8,17 +6,10 @@ class HousesController < ApplicationController
   def create
  
     @house = House.build_me(params[:house])
-    # @house = House.new(params[:house])
-
-    # # Find the brand and product from the code
-    # unless @house.code.nil?
-    #   @product = Product.find_by_range(@house.code.to_i)
-    #   @house.product = @product unless @product.nil?
-    # end
-
+    
     respond_to do |format|
-      if @house.step1
-        format.html { redirect_to edit_house_path(@house)} 
+      if @house.save
+        format.html { redirect_to house_build_index_path(@house.uuid)} 
       else
         format.html { render :action => "new" }
       end
@@ -26,39 +17,8 @@ class HousesController < ApplicationController
 
   end
 
-  # we don't support show - only edit ?? unless its already been submitted?
-  # we should hide email and postcode too, and only let the user edit
-  # it though a guid
-  def show
-    redirect_to edit_house_url
-  end
-
-  def edit
-    @house = find_house
-    @house.reopen if @house.state == "s3"
-  end
-
-  def update
-    @house = find_house
-    unless @house.nil?
-      @house.assign_attributes(params[:house])
-      @house.done
-    end
-    respond_with @house, {:location => thanks_house_path(@house)}
-  end
-
   def new
     @house = House.new
-  end
-
-  def thanks
-    @house = find_house
-  end
-
-  private
-
-  def find_house
-    House.where(:uuid => params[:id]).first
   end
 
 end

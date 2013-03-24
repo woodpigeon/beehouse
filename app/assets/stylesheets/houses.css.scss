@@ -2,17 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// .lavender {
-//   background-color: #F252E0;
-// }
-
-// .yellow {
-//   background-color:#FFFC33;
-// }
-
-// .pink {
-//   background-color:#F252E0;
-// }
 
 div.control-group div.controls {
   margin-left:120px; 
@@ -26,7 +15,7 @@ div.control-group .control-label
 
 .bees { margin:auto; }
 .tubes { width: 290px; height:290px; text-align:center; margin:auto;}
-.tube { float:left; width:90px; height:90px; text-align:center;}
+.tube { float:left; width:90px; height:90px; text-align:center; cursor: hand;}
 .pink { background-image:url(/assets/pink.png); }
 .yellow { background-image:url(/assets/yellow.png); }
 .lavender { background-image:url(/assets/lavender.png); }
@@ -34,7 +23,17 @@ div.control-group .control-label
 .mud { background-image:url(/assets/mud.png); }
 .leaf { background-image:url(/assets/leaf.png); }
 .empty { background-image:url(/assets/empty.png); }
-// /.tube {margin-right:10px;margin-bottom:10px;}
 .tube.pos_2 {margin-right:0}
 .tube.pos_5 {margin-right:0}
 .tube.pos_8 {margin-right:0}
+
+.debug {padding-top:20px }
+#tubes li {list-style:none; }
+
+.step {
+        background-color:#fff;
+       -webkit-border-radius:10px; 
+       padding:20px;
+       clear:both;
+       margin:20px 10px 20px 10px;
+     }
