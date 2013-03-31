@@ -2,24 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-// div.control-group div.controls {
-//   margin-left:120px; 
-// }
-
-// div.control-group .control-label 
-// { 
-//   width:120px; 
-// }
-
-
+li {
+  background-position: top left;
+  background-repeat: no-repeat;
+}
 .bees { margin:auto; }
 .tubes { width: 290px; height:290px; text-align:center; margin:auto;}
 .tube { float:left; width:90px; height:90px; text-align:center; cursor: hand;}
 .pink { background-image:url(/assets/pink.png); }
 .yellow { background-image:url(/assets/yellow.png); }
 .lavender { background-image:url(/assets/lavender.png); }
-.material { width:90px; height:90px; }
 .mud { background-image:url(/assets/mud.png); }
 .leaf { background-image:url(/assets/leaf.png); }
 .empty { background-image:url(/assets/empty.png); }
@@ -27,16 +19,26 @@
 .tube.pos_5 {margin-right:0}
 .tube.pos_8 {margin-right:0}
 
-.debug {padding-top:20px }
-#tubes li {list-style:none; }
+.debug {
+  padding-top:20px; 
+}
+
+#tubes {
+  li {
+    list-style:none; 
+    a {
+      display:block; height:100%; 
+    }
+  }
+}
 
 .step {
-        background-color:#fff;
-       -webkit-border-radius:10px; 
-       padding:20px;
-       clear:both;
-       margin:20px 10px 20px 10px;
-     }
+  background-color:#fff;
+  -webkit-border-radius:10px; 
+  padding:20px;
+  clear:both;
+  margin:20px 10px 20px 10px;
+}
 
 .steps {
   font-family: 'Coustard', serif;
@@ -55,5 +57,47 @@
   font-size: 16px;
   margin:0 10px 20px 10px;
   padding:0;
+}
 
+#materialsList {
+  margin:0;
+
+  li {
+    list-style: none;
+    height: 87px;
+    
+    cursor: hand;
+    -webkit-border-radius:10px; 
+
+    a {
+      display:block; height:100%; 
+      padding-left:100px;
+      background-position: top left;
+      background-repeat: no-repeat;
+
+      span {
+        font-size: 18px;
+        font-family: 'Coustard', serif;
+        line-height: 85px;
+        padding:0;
+        margin:0;
+      }
+    }
+    a.selected {
+      background-color: #ddd;
+    }
+
+    a:hover {
+      color:#111;
+    }
   }
+}
+
+
+#materialsStep {
+  #tubes li a {
+
+    width:90px; height:90px;
+  }
+}
+
