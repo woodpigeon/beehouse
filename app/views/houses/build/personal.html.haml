@@ -1,40 +1,43 @@
-#personalStep.row.step
+#personalStep.row
 
-  .span9
-    %p.steps Step 3 of 3
-    %p.step-instructions
-      Please provide the following information
+  .span8.offset2
 
-    =simple_form_for(@house, 
-                     :url => wizard_path, 
-                     :method => :put, 
-                     :html => {:class => 'form-horizontal'} ) do |f|
+    .step
 
-      - if notification = f.error_notification
-        .alert.alert-error
-          %a.close{data: {dismiss: "alert"}, href: "#"} &times;
-          = notification 
-      
-      =f.input :postcode, 
-               :label => "Postcode *", 
-               :wrapper => :bootstrap, 
-               :placeholder => 'e.g. SN2 2AB',
-               :input_html => {:class => "input-small" }
+      %p.steps Step 3 of 3
+      %p.step-instructions
+        Please provide the following information
 
-      =f.input :email, 
-               :label => "Email *", 
-               :wrapper => :bootstrap, 
-               :placeholder => "e.g. me@gmail.com",
-               :input_html => {:class => "input-medium" }
+      =simple_form_for(@house, 
+                       :url => wizard_path, 
+                       :method => :put, 
+                       :html => {:class => 'form-horizontal'} ) do |f|
 
-      =f.input :accepted_terms, 
-               :label => "Terms *", 
-               :wrapper => :bootstrap,
-               :input_html => {:class => "input-medium" }
-               
+        - if notification = f.error_notification
+          .alert.alert-error
+            %a.close{data: {dismiss: "alert"}, href: "#"} &times;
+            = notification 
+        
+        =f.input :postcode, 
+                 :label => "Postcode *", 
+                 :wrapper => :bootstrap, 
+                 :placeholder => 'e.g. SN2 2AB',
+                 :input_html => {:class => "input-small" }
 
-      .wiz-controls
-        = link_to 'Previous' , previous_wizard_path, :class => 'btn wiz-prev'
-        = f.submit 'Next', :class => 'btn btn-primary wiz-next' 
+        =f.input :email, 
+                 :label => "Email *", 
+                 :wrapper => :bootstrap, 
+                 :placeholder => "e.g. me@gmail.com",
+                 :input_html => {:class => "input-medium" }
+
+        =f.input :accepted_terms, 
+                 :label => "Terms *", 
+                 :wrapper => :bootstrap,
+                 :input_html => {:class => "input-medium" }
+                 
+
+        .wiz-controls
+          = link_to 'Previous' , previous_wizard_path, :class => 'btn wiz-prev'
+          = f.submit 'Next', :class => 'btn btn-primary wiz-next' 
 
 

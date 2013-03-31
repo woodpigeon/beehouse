@@ -1,90 +1,59 @@
 
-#materialModal.modal.hide.fade{tabindex: "-1", 
-                               role: "dialog", 
-                               'aria-labelledby' => "myModalLabel", 
-                               'aria-hidden' => "true",
-                               data: {'tube-index' => 9}}
-  .modal-header
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Tube</h3>
 
-  .modal-body
-    %ul#materialsList
-      %li
-        %a.empty.selected{href: "#", data: {bee_code: "empty"} }
-          %span Empty
-      %li 
-        %a.mud{href: "#", data: {bee_code: "mud"} }
-          %span Mud
-      %li 
-        %a.leaf{href: "#", data: {bee_code: "leaf"}}
-          %span Leaves
+#materialsStep.row
 
-  .modal-footer
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-    <button class="btn btn-primary save" >Save</button>
+  .span8.offset2
 
+    .step
 
-#materialsStep.row.step
-
-  .row
-    .span9
       %p.steps Step 2 of 3
       %p.step-instructions
         What's going on in your tubes?
 
-  .span12
-    .text-center
-      =simple_form_for(@house, :url => wizard_path, :method => :put, :html => {:class => 'form-horizontal'} ) do |f|
-        - @house.errors.full_messages.each do |msg|
-          %li= msg
+      .text-center
+        =simple_form_for(@house, :url => wizard_path, :method => :put, :html => {:class => 'form-horizontal'} ) do |f|
+          - @house.errors.full_messages.each do |msg|
+            %li= msg
 
-        %ul#tubes.tubes
-          -@house.tubes.each.with_index do |tube,index|
+          %ul#tubes.tubes
+            -@house.tubes.each.with_index do |tube,index|
 
-            = f.simple_fields_for :tubes, tube do |t|
-              %li{ class: "tube #{t.object.colour_code}", data: {index: index}}
-                = t.hidden_field :position, :class => 'tube_position'
-                = t.hidden_field :colour_code
-                = t.hidden_field :bee_code
-                %a{href: "#materialModal", :class =>"material #{tube.bee_code}", data: {'bee-code' => tube.bee_code}}}
+              = f.simple_fields_for :tubes, tube do |t|
+                %li{ class: "tube #{t.object.colour_code}", data: {index: index}}
+                  = t.hidden_field :position, :class => 'tube_position'
+                  = t.hidden_field :colour_code
+                  = t.hidden_field :bee_code
+                  %a{href: "#materialModal", :class =>"material #{tube.bee_code}", data: {'bee-code' => tube.bee_code}}
 
-                =f.hidden_field :code
-
-        .wiz-controls
-          = link_to 'Previous' , previous_wizard_path, :class => 'btn wiz-prev'
-          = f.submit 'Next', :class => 'btn btn-primary wiz-next' 
-
-
-
-  
-  / .row
-  /   .span3
-  /     / %h4 Leafcutter bee
-  /     / %img{:src => '/assets/leaf.png'}
-  /     / %p Leaves
-  /     / %img{:src => '/assets/leafcutter.jpg'}
+                  =f.hidden_field :code
     
-  /     / %h4 Mason bee
-  /     / %img{:src => '/assets/mud.png'}
-  /     / %p Mud
-  /     / %img{:src => '/assets/mason.jpg'}
+          .wiz-controls
+            = link_to 'Previous' , previous_wizard_path, :class => 'btn wiz-prev'
+            = f.submit 'Next', :class => 'btn btn-primary wiz-next' 
+
+
       
-      
-  /     =simple_form_for(@house, :url => wizard_path, :method => :put, :html => {:class => 'form-horizontal'} ) do |f|
-  /       - @house.errors.full_messages.each do |msg|
-  /         %li= msg
+      #materialModal.modal.hide.fade{tabindex: "-1", 
+                                     role: "dialog", 
+                                     'aria-labelledby' => "myModalLabel", 
+                                     'aria-hidden' => "true",
+                                     data: {'tube-index' => 0}}
+        .modal-header
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Tube</h3>
 
-  /       / = f.simple_fields_for :tubes do |t|
-  /       /   %li{ class: "tube #{t.object.colour_code}"}
-  /       /     = t.hidden_field :position, :class => 'tube_position'
-  /       /     = t.hidden_field :colour_code
-              
-        
-  /       =f.hidden_field :code
+        .modal-body
+          %ul#materialsList
+            %li
+              %a.empty.selected{href: "#", data: {bee_code: "empty"} }
+                %span Empty
+            %li 
+              %a.mud{href: "#", data: {bee_code: "mud"} }
+                %span Mud
+            %li 
+              %a.leaf{href: "#", data: {bee_code: "leaf"}}
+                %span Leaves
 
-  /       .wiz-controls
-  /         = link_to 'Previous' , previous_wizard_path, :class => 'btn wiz-prev'
-  /         = f.submit 'Next', :class => 'btn btn-primary wiz-next' 
-
-
+        .modal-footer
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+          <button class="btn btn-primary save" >Save</button>

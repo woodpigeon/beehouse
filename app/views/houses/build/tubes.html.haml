@@ -1,34 +1,37 @@
 
-#tubesStep.row.step
+#tubesStep.row
 
-  .span9
-    %p.steps Step 1 of 3
-    %p.step-instructions
-      Drag and drop the tubes into the correct order to match your bee house.
+  .span8.offset2
 
-    =simple_form_for(@house, 
-                     :url => wizard_path, 
-                     :method => :put, 
-                     :html => {:class => 'form-horizontal', :id => 'tube-form'} ) do |f|
-      
-      =f.hidden_field :code
+    .step
+    
+      %p.steps Step 1 of 3
+      %p.step-instructions
+        Drag and drop the tubes into the correct order to match your bee house.
 
-      - if notification = f.error_notification
-        .alert.alert-error
-          %a.close{data: {dismiss: "alert"}, href: "#"} &times;
-          = notification 
-
-      .text-center
-        %ul#tubes.tubes
-          
-          / see http://stackoverflow.com/questions/9507423/sorting-nested-form-fields-in-rails
-          
-          = f.simple_fields_for :tubes do |t|
-            %li{ class: "tube #{t.object.colour_code}"}
-              = t.hidden_field :position, :class => 'tube_position'
-              = t.hidden_field :colour_code
-              
-      .wiz-controls
-        = f.submit 'Next', :class => 'btn btn-primary wiz-next' 
-
+      =simple_form_for(@house, 
+                       :url => wizard_path, 
+                       :method => :put, 
+                       :html => {:class => 'form-horizontal', :id => 'tube-form'} ) do |f|
         
+        =f.hidden_field :code
+
+        - if notification = f.error_notification
+          .alert.alert-error
+            %a.close{data: {dismiss: "alert"}, href: "#"} &times;
+            = notification 
+
+        .text-center
+          %ul#tubes.tubes
+            
+            / see http://stackoverflow.com/questions/9507423/sorting-nested-form-fields-in-rails
+            
+            = f.simple_fields_for :tubes do |t|
+              %li{ class: "tube #{t.object.colour_code}"}
+                = t.hidden_field :position, :class => 'tube_position'
+                = t.hidden_field :colour_code
+                
+        .wiz-controls
+          = f.submit 'Next', :class => 'btn btn-primary wiz-next' 
+
+          

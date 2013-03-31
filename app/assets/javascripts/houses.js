@@ -66,5 +66,7 @@ $(function(){
     
   });
 
+  $("#materialModal").appendTo($("body"));
+
 });
 
