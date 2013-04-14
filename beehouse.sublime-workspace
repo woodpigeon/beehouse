@@ -55,47 +55,7 @@
 			"file": "app/views/houses/build/bees.html.haml",
 			"settings":
 			{
-				"buffer_size": 2108,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/javascripts/houses.js",
-			"settings":
-			{
-				"buffer_size": 1842,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/houses.css.scss",
-			"settings":
-			{
-				"buffer_size": 2002,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 2007,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/houses/build/personal.html.haml",
-			"settings":
-			{
-				"buffer_size": 1332,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/houses/build/tubes.html.haml",
-			"settings":
-			{
-				"buffer_size": 1117,
+				"buffer_size": 2132,
 				"line_ending": "Unix"
 			}
 		}
@@ -280,21 +240,21 @@
 	},
 	"file_history":
 	[
-		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/application.js",
-		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/tubes.html.haml",
-		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/personal.html.haml",
+		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/bees.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/houses.js",
+		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/houses.css.scss",
+		"/Users/tim/Sites/rails/beehouse/app/views/layouts/application.html.erb",
+		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/personal.html.haml",
+		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/tubes.html.haml",
+		"/Users/tim/Sites/rails/beehouse/app/models/house.rb",
 		"/Users/tim/Sites/rails/beehouse/app/controllers/houses/build_controller.rb",
+		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/application.js",
 		"/Users/tim/Sites/rails/beehouse/config/database.yml",
 		"/Users/tim/Sites/rails/beehouse/Gemfile",
-		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/bees.html.haml",
 		"/Users/tim/Sites/rails/beehouse/config/application.rb",
 		"/Users/tim/Sites/rails/beehouse/config/environments/production.rb",
-		"/Users/tim/Sites/rails/beehouse/app/models/house.rb",
-		"/Users/tim/Sites/rails/beehouse/app/views/layouts/application.html.erb",
 		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/bootstrap_and_overrides.css",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/new.html.haml",
-		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/houses.css.scss",
 		"/Users/tim/Sites/rails/beehouse/app/models/tube.rb",
 		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/scaffolds.cssno.scssno",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/thanks.html.haml",
@@ -415,7 +375,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 95.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"",
@@ -433,6 +393,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tubes",
+			"on_tubes",
 			"spa",
 			"list-style",
 			"font",
@@ -558,9 +520,7 @@
 			"sustr",
 			"suppl",
 			"On foot",
-			"by ",
-			"versionless",
-			"versio"
+			"by "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -608,7 +568,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -616,15 +576,15 @@
 					"file": "app/views/houses/build/bees.html.haml",
 					"settings":
 					{
-						"buffer_size": 2108,
+						"buffer_size": 2132,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								50,
-								16
+								950,
+								950
 							]
 						],
 						"settings":
@@ -632,137 +592,7 @@
 							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/assets/javascripts/houses.js",
-					"settings":
-					{
-						"buffer_size": 1842,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1835,
-								1835
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 189.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/assets/stylesheets/houses.css.scss",
-					"settings":
-					{
-						"buffer_size": 2002,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1994,
-								1994
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 2007,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1577,
-								1577
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/houses/build/personal.html.haml",
-					"settings":
-					{
-						"buffer_size": 1332,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13,
-								46
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/houses/build/tubes.html.haml",
-					"settings":
-					{
-						"buffer_size": 1117,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								49,
-								49
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 219.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

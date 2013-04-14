@@ -79,7 +79,8 @@ class House < ActiveRecord::Base
 
   def generate_uuid
     self.uuid = loop do
-      random_uuid = SecureRandom.urlsafe_base64.downcase
+      random_uuid = SecureRandom.uuid()#urlsafe_base64.downcase
+      #ecureRandom.hex(15)
       break random_uuid unless House.where(uuid: random_uuid).exists?
     end
   end
