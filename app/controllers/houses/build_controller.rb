@@ -1,7 +1,8 @@
 class Houses::BuildController < ApplicationController
   include Wicked::Wizard
 
-  steps :tubes, :bees, :personal, :thanks
+  #steps :tubes, :bees, :personal, :thanks
+  steps :bees, :personal, :thanks
 
   def show
     @house = find_house        
@@ -11,8 +12,7 @@ class Houses::BuildController < ApplicationController
 
   def update
     @house = find_house
-    # @house.assign_attributes(params[:house])
-
+    
     # set so that debugger inspection of step works
     @current_step = step
     @next_step = next_step
@@ -21,9 +21,8 @@ class Houses::BuildController < ApplicationController
     params[:house][:state] = step.to_s
     
     @house.update_attributes(params[:house])
-    # #{state_machine attribute}_event is important - it lets you set the state and still fire callbacks
-    # tries to save here, will move to next step if valid model
-    render_wizard @house
+    
+    render_wizard @house # see wicked
 
   end
 

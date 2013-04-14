@@ -9,9 +9,8 @@ class House < ActiveRecord::Base
 
   before_create :generate_uuid
 
-  validates_presence_of :code
-  validates_uniqueness_of :code
-  validates_numericality_of :code
+  validates :code, numericality: true, presence: true, uniqueness: true
+
   # Note the ^ is a custom_error_message thing to prevent the attribute name from being prepended to the message
   validates_presence_of :product_id, :message => "^Sorry, we don't recognise this code. Please check it and try again."    
   validates_presence_of [:postcode, :email], if: :on_personal?
@@ -19,9 +18,9 @@ class House < ActiveRecord::Base
   validates :accepted_terms, :acceptance => {:accept => true}, if: :on_personal?
 
  
-  def on_tubes?
-    state == 'tubes'
-  end
+  # def on_tubes?
+  #   state == 'tubes'
+  # end
 
   def on_bees?
     state == 'bees'
