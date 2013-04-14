@@ -20,6 +20,8 @@ group :development, :test do
   gem 'thin'
   gem 'binding_of_caller'
   gem "mysql2", "~> 0.3.11"
+  gem 'capybara'
+  gem 'launchy'
 end
 
 # Gems used only for assets and not required

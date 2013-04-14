@@ -33,4 +33,4 @@ doc/
 /config/application.yml
 
 /tmp/
-/artwork/
+/artwork/.zeus.sock
