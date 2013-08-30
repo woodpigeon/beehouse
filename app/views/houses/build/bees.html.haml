@@ -28,7 +28,7 @@
                   =f.hidden_field :code
     
           .wiz-controls
-            = link_to 'Previous' , previous_wizard_path, :class => 'btn wiz-prev'
+            /= link_to 'Previous' , previous_wizard_path, :class => 'btn wiz-prev'
             = f.submit 'Next', :class => 'btn btn-primary wiz-next' 
 
 
@@ -40,7 +40,7 @@
                                      data: {'tube-index' => 0}}
         .modal-header
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h3 id="myModalLabel">Tube</h3>
+          <h3 id="myModalLabel">Tube (todo - select colour)</h3>
 
         .modal-body
           %ul#materialsList

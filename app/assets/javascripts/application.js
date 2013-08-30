@@ -12,10 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
-//= require twitter/bootstrap/bootstrap-modal
-//= require twitter/bootstrap/bootstrap-tooltip
-//= require twitter/bootstrap/bootstrap-popover
-//= require_tree .
+//= require bootstrap-modal
+//= require bootstrap-tooltip
+//= require bootstrap-popover
+//#=# require twitter/bootstrap/bootstrap-popover
+//#=# require twitter/bootstrap
+//#=# require twitter/bootstrap/bootstrap-modal
+//#=# require twitter/bootstrap/bootstrap-tooltip
+//#=# require twitter/bootstrap/bootstrap-popover
 //= require jquery.ui.touch-punch.min
 //= require handlebars
+//= require_tree .

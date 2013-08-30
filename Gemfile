@@ -20,12 +20,14 @@ group :development, :test do
   gem 'thin'
   gem 'binding_of_caller'
   gem "mysql2", "~> 0.3.11"
+  gem 'capybara'
+  gem 'launchy'
 end
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  #gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails'#, '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -42,7 +44,9 @@ gem 'custom_error_message' # using ^Message eg in validates_... whill exclude th
 #gem "friendly_id", "~> 4.0.9" # Note: You MUST use 4.0.9 or greater for Rails 3.2.10+
 #gem "puma", ">= 1.6.3"
 gem "haml-rails"#, ">= 0.4"
-gem "twitter-bootstrap-rails", ">= 2.2.4", :group => :assets
+#gem "twitter-bootstrap-rails", ">= 2.2.4", :group => :assets
+gem 'sass-rails', '~> 3.2'
+gem 'bootstrap-sass', '~> 2.3.1.0'
 gem "libv8", ">= 3.11.8"
 #gem "therubyracer", ">= 0.11.3", :group => :assets, :platform => :ruby, :require => "v8"
 
