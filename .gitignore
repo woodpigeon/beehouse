@@ -2,6 +2,8 @@
 *.rbc
 .bundle
 .config
+*.csr
+*.key
 coverage
 InstalledFiles
 lib/bundler/man
@@ -34,3 +36,5 @@ doc/
 
 /tmp/
 /artwork/.zeus.sock
+
+/beehouse.sublime-workspace
