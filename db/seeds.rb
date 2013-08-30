@@ -29,7 +29,7 @@ User.create(
   )
 
 User.create(
-    email: 'c.montesanti@beeguardianfoundation.org',
+    email: 'someone@beeguardianfoundation.org',
     password: 'HouseOfBees!',
     password_confirmation: 'HouseOfBees!'
   )
