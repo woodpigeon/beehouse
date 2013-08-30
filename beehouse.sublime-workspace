@@ -52,10 +52,106 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/houses/build/bees.html.haml",
+			"file": ".gitignore",
 			"settings":
 			{
-				"buffer_size": 2132,
+				"buffer_size": 344,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "zeus.json",
+			"settings":
+			{
+				"buffer_size": 528,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/spec_helper.rb",
+			"settings":
+			{
+				"buffer_size": 1625,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/controllers/houses_controller_spec.rb",
+			"settings":
+			{
+				"buffer_size": 363,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 2018,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/houses.rb",
+			"settings":
+			{
+				"buffer_size": 218,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/designs.rb",
+			"settings":
+			{
+				"buffer_size": 142,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/products.rb",
+			"settings":
+			{
+				"buffer_size": 352,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/factories.rb",
+			"settings":
+			{
+				"buffer_size": 362,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/brands.rb",
+			"settings":
+			{
+				"buffer_size": 272,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/tubes.rb",
+			"settings":
+			{
+				"buffer_size": 218,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/admin_products.rb",
+			"settings":
+			{
+				"buffer_size": 213,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/build_controller.rb",
+			"settings":
+			{
+				"buffer_size": 441,
 				"line_ending": "Unix"
 			}
 		}
@@ -240,20 +336,46 @@
 	},
 	"file_history":
 	[
+		"/Users/tim/Sites/rails/beehouse/spec/requests/houses_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/factories/brand.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/factories/product.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/factories/Designs,rb",
+		"/Users/tim/Sites/rails/beehouse/spec/features/houses_spec.rb",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/bees.html.haml",
+		"/Users/tim/Sites/rails/beehouse/spec/requests/admin/admin_products_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/bootstrap_and_overrides.css",
+		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/bootstrap_bits.js.coffee",
+		"/Users/tim/Sites/rails/beehouse/app/models/house.rb",
+		"/Users/tim/Sites/rails/beehouse/Gemfile",
+		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/admin/application.css.scss",
+		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/application.js",
+		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/admin/products.js.coffee",
+		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/admin/application.js",
+		"/Users/tim/Sites/rails/beehouse/spec/controllers/admin/products_controller_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/routing/admin/products_routing_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/config/routes.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/helpers/houses_helper_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/models/admin/product_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/models/brand_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/models/design_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/models/house_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/models/product_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/models/user_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/models/tube_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/views/houses/create.html.haml_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/routing/houses_routing_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/spec/views/houses/new.html.haml_spec.rb",
+		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/admin/products.js",
+		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/bootstrap.js.coffee",
 		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/houses.js",
 		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/houses.css.scss",
 		"/Users/tim/Sites/rails/beehouse/app/views/layouts/application.html.erb",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/personal.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/tubes.html.haml",
-		"/Users/tim/Sites/rails/beehouse/app/models/house.rb",
 		"/Users/tim/Sites/rails/beehouse/app/controllers/houses/build_controller.rb",
-		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/application.js",
 		"/Users/tim/Sites/rails/beehouse/config/database.yml",
-		"/Users/tim/Sites/rails/beehouse/Gemfile",
 		"/Users/tim/Sites/rails/beehouse/config/application.rb",
 		"/Users/tim/Sites/rails/beehouse/config/environments/production.rb",
-		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/bootstrap_and_overrides.css",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/new.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/models/tube.rb",
 		"/Users/tim/Sites/rails/beehouse/app/assets/stylesheets/scaffolds.cssno.scssno",
@@ -264,7 +386,6 @@
 		"/Users/tim/Sites/rails/beehouse/app/controllers/houses_controller.rb",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/step2.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/step3.html.haml",
-		"/Users/tim/Sites/rails/beehouse/config/routes.rb",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/step1",
 		"/Users/tim/Sites/rails/beehouse/app/controllers/housess_controller.rb",
 		"/Users/tim/Sites/rails/beehouse/app/views/houses/build/step1.html.haml",
@@ -279,7 +400,6 @@
 		"/Users/tim/Sites/rails/beehouse/app/assets/javascripts/jquery.ui.touch-punch.min.js",
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130320064749_add_accepted_terms_to_houses.rb",
 		"/Users/tim/Sites/rails/beehouse/app/views/home/index.html.erb",
-		"/Users/tim/Sites/rails/beehouse/spec/controllers/admin/products_controller_spec.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/factories/admin_products.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/views/admin/products/edit.html.haml_spec.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/views/admin/products/index.html.haml_spec.rb",
@@ -291,9 +411,6 @@
 		"/Users/tim/Sites/rails/beehouse/db/migrate/20130306213754_create_houses.rb",
 		"/Users/tim/Sites/rails/beehouse/app/models/admin/product.rb",
 		"/Users/tim/Sites/rails/beehouse/spec/helpers/admin/products_helper_spec.rb",
-		"/Users/tim/Sites/rails/beehouse/spec/models/admin/product_spec.rb",
-		"/Users/tim/Sites/rails/beehouse/spec/requests/admin/admin_products_spec.rb",
-		"/Users/tim/Sites/rails/beehouse/spec/routing/admin/products_routing_spec.rb",
 		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/edit.html.haml",
 		"/Users/tim/Sites/rails/beehouse/app/views/admin/products/show.html.haml",
 		"/Users/tim/Sites/rails/beehouse/api.ntmobile.org.csr",
@@ -346,28 +463,7 @@
 		"/Users/tim/Sites/rails/nt/mobile-api/import/import_vader_json.rb",
 		"/Users/tim/Sites/rails/nt/mobile-api/config/mongoid.yml",
 		"/Users/tim/Sites/rails/nt/mobile-api/public/index.html",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/attraction_manifest_serializer.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/one_line_details_logging.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/config/environments/development.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/models/asset.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/config/initializers/rack_initializer.rb",
-		"/Users/tim/Sites/iOS/nt/ios-handbook-app/.gitignore",
-		"/Users/tim/Sites/rails/nt/mobile-api/.gitignore",
-		"/Users/tim/Sites/iOS/nt/app/nt-ios-gardens-app/Podfile",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/price_serializer.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/price_group_serializer.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/presenters/price_presenter.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/price_period_serializer.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/presenters/pri",
-		"/Users/tim/.aws_credentials_file_nt",
-		"/Users/tim/Sites/rails/nt/mobile-api/config/environment.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/spec/requests/v1/realm_http_headers_spec.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/presenters/price_category_presenter.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/presenters/price_group_presenter.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/app/controllers/home_controller.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/public/robots.txt",
-		"/Users/tim/Sites/rails/nt/mobile-api/spec/requests/v1/attraction_http_headers_spec.rb",
-		"/Users/tim/Sites/rails/nt/mobile-api/spec/requests/v1/realm_spec.rb"
+		"/Users/tim/Sites/rails/nt/mobile-api/app/serializers/v1/attraction_manifest_serializer.rb"
 	],
 	"find":
 	{
@@ -393,6 +489,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"brand_1",
+			"admin_products_path",
+			"twitter-bootstrap-static/bootstrap",
+			"twitter-bootstrap-static",
+			"popover",
+			"uuid",
 			"tubes",
 			"on_tubes",
 			"spa",
@@ -514,13 +616,7 @@
 			"puts \"her",
 			"urn_id_mapp",
 			"get_attraction",
-			"rsp",
-			"URN_IDS_MAPPED_TO_PROPERTY_NAME",
-			"time_li",
-			"sustr",
-			"suppl",
-			"On foot",
-			"by "
+			"rsp"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -568,31 +664,342 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/houses/build/bees.html.haml",
+					"file": ".gitignore",
 					"settings":
 					{
-						"buffer_size": 2132,
+						"buffer_size": 344,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								950,
-								950
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 219.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "zeus.json",
+					"settings":
+					{
+						"buffer_size": 528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								527,
+								527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "spec/spec_helper.rb",
+					"settings":
+					{
+						"buffer_size": 1625,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "spec/controllers/houses_controller_spec.rb",
+					"settings":
+					{
+						"buffer_size": 363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								363,
+								363
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 2018,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								496,
+								496
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "spec/factories/houses.rb",
+					"settings":
+					{
+						"buffer_size": 218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "spec/factories/designs.rb",
+					"settings":
+					{
+						"buffer_size": 142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "spec/factories/products.rb",
+					"settings":
+					{
+						"buffer_size": 352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								352,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "spec/factories/factories.rb",
+					"settings":
+					{
+						"buffer_size": 362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								355,
+								355
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "spec/factories/brands.rb",
+					"settings":
+					{
+						"buffer_size": 272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "spec/factories/tubes.rb",
+					"settings":
+					{
+						"buffer_size": 218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								72
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "spec/factories/admin_products.rb",
+					"settings":
+					{
+						"buffer_size": 213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								72
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/controllers/build_controller.rb",
+					"settings":
+					{
+						"buffer_size": 441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -658,6 +1065,18 @@
 		"selected_items":
 		[
 			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
 				"appl",
 				"app/views/layouts/application.html.erb"
 			],
@@ -670,20 +1089,12 @@
 				"config/application.rb"
 			],
 			[
-				"gem",
-				"Gemfile"
-			],
-			[
 				"data",
 				"config/database.yml"
 			],
 			[
 				"sime",
 				"config/initializers/simple_form.rb"
-			],
-			[
-				"route",
-				"config/routes.rb"
 			],
 			[
 				"deve",
@@ -704,10 +1115,6 @@
 			[
 				"applica",
 				"app/assets/javascripts/application.js"
-			],
-			[
-				"ge",
-				"Gemfile"
 			],
 			[
 				"gen",
@@ -860,6 +1267,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 469.0,
+	"side_bar_width": 328.0,
 	"status_bar_visible": true
 }
