@@ -1,8 +1,6 @@
 
 ### Overview
 
-. 
-
 **beehouse** is a rough prototype web app for the [Bee Guardian Foundation](http://www.beeguardianfoundation.org) charity.
 
 It built using Rails 3.2 and Ruby 1.9.3. 
