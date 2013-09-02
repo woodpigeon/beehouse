@@ -225,33 +225,33 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-postgresql-adapter
-  better_errors (>= 0.6.0)
-  binding_of_caller
+  activerecord-postgresql-adapter (~> 0.0.1)
+  better_errors (~> 0.7.2)
+  binding_of_caller (~> 0.7.1)
   bootstrap-sass (~> 2.3.1.0)
-  capybara
-  coffee-rails
-  custom_error_message
-  devise
-  factory_girl_rails (>= 4.2.0)
-  figaro (>= 0.5.3)
-  haml-rails
-  jquery-rails
-  launchy
-  libv8 (>= 3.11.8)
+  capybara (~> 2.1.0)
+  coffee-rails (~> 3.2.2)
+  custom_error_message (~> 1.1.1)
+  devise (~> 2.2.3)
+  factory_girl_rails (~> 4.2.1)
+  figaro (~> 0.6.3)
+  haml-rails (~> 0.4)
+  jquery-rails (~> 2.2.1)
+  launchy (~> 2.2.0)
+  libv8 (~> 3.11.8.13)
   mysql2 (~> 0.3.11)
-  pg
-  quiet_assets (>= 1.0.1)
-  rails (= 3.2.12)
-  rails_admin
-  rspec-rails (~> 2.0)
-  sass-rails (~> 3.2)
-  simple_form (>= 2.0.4)
-  sqlite3
-  state_machine
-  therubyracer-heroku
-  thin
-  uglifier (>= 1.0.3)
-  unicorn
+  pg (~> 0.14.1)
+  quiet_assets (~> 1.0.2)
+  rails (~> 3.2.12)
+  rails_admin (~> 0.4.6)
+  rspec-rails (~> 2.13.0)
+  sass-rails (~> 3.2.6)
+  simple_form (~> 2.1.0)
+  sqlite3 (~> 1.3.7)
+  state_machine (~> 1.1.2)
+  therubyracer-heroku (~> 0.8.1.pre3)
+  thin (~> 1.5.1)
+  uglifier (~> 1.3.0)
+  unicorn (~> 4.6.2)
   validates_email_format_of!
-  wicked
+  wicked (~> 0.6.0)
