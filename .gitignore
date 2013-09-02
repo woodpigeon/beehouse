@@ -37,3 +37,5 @@ doc/
 /artwork/.zeus.sock
 
 /beehouse.sublime-workspace
+/Gemfile.backup
+/Gemfile.lock.backup
