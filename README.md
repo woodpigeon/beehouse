@@ -1,7 +1,7 @@
 
 ## Beehouse
 
-[![Build Status](https://travis-ci.org/woodpigeon/beehouse.png?branch=master)](https://travis-ci.org/woodpigeon/beehouse)
+[![Build Status](https://snap-ci.com/CUZU0sq5W67UgZ-Jkstgn1phfjGsKaXd8oY21ukifiQ/build_image)](https://snap-ci.com/projects/woodpigeon/beehouse/build_history)
 
 ### Overview
 
