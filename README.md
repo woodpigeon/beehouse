@@ -1,4 +1,8 @@
 
+## Beehouse
+
+[![Build Status](https://travis-ci.org/woodpigeon/beehouse.png?branch=master)](https://travis-ci.org/woodpigeon/beehouse)
+
 ### Overview
 
 **beehouse** is a prototype web app for the [Bee Guardian Foundation](http://www.beeguardianfoundation.org) charity.

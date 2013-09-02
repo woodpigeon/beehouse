@@ -13,17 +13,14 @@ development:
   username: <%= ENV['db_user'] %>
   password: <%= ENV['db_password'] %>
 
-# development:
-#   adapter: postgresql
-#   host: localhost
-#   encoding: unicode
-#   database: beehouse_development
-
 test:
+  #pool: 5
+  #timeout: 5000
+  # These setting work on travis too
   adapter: sqlite3
+  #database: ":memory:"
   database: db/test.sqlite3
-  pool: 5
-  timeout: 5000
+  timeout: 500
 
 production:
   <<: *base
