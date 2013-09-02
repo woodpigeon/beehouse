@@ -21,7 +21,6 @@ doc/
 
 .DS_Store
 *.log
-*.json
 
 /tmp/rspec_guard_result
 
