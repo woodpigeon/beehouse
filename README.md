@@ -9,7 +9,7 @@ Its uses the [Wicked](https://github.com/schneems/wicked) state machine gem to g
 
 It is intended to be deployed to [Heroku](http://www.heroku.com).
 
-### Getting up and running
+### Up and running
 
 This assumes you have Ruby 1.9.3 installed using rbenv or rvm, and MySQL running.
 
@@ -32,8 +32,26 @@ bundle exec rails s
 
 ### Running tests
 
+Initialise the test database with 
+
 ```
 bundle exec rake db:test:prepare
+```
+
+and run tests with 
+
+```
 bundle exec rspec
 ```
 
+Alternatively, for faster tests, install and use [Zeus](https://github.com/burke/zeus). In a separate terminal window or tab run 
+
+```
+zeus start
+``` 
+
+and then run tests with 
+
+```
+zeus test spec
+```
