@@ -11,7 +11,7 @@ It is built using Rails 3.2 and Ruby 1.9.3.
 
 Its uses the [Wicked](https://github.com/schneems/wicked) state machine gem to guide user input, and [rails_admin](https://github.com/sferik/rails_admin) for admin functions and CMS.
 
-It is intended to be deployed to [Heroku](http://www.heroku.com).
+It can be easily deployed to [Heroku](http://www.heroku.com).
 
 ### Up and running
 
@@ -58,4 +58,14 @@ and then run tests with
 
 ```
 zeus test spec
+```
+
+### Deploying to Heroku
+
+```
+heroku create
+git push heroku master
+heroku run 'rake db:migrate'
+heroku run 'rake db:seed'
+heroku open
 ```
