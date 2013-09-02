@@ -1,15 +1,15 @@
 
 ### Overview
 
-**beehouse** is a rough prototype web app for the [Bee Guardian Foundation](http://www.beeguardianfoundation.org) charity.
+**beehouse** is a prototype web app for the [Bee Guardian Foundation](http://www.beeguardianfoundation.org) charity.
 
-It built using Rails 3.2 and Ruby 1.9.3. 
+It is built using Rails 3.2 and Ruby 1.9.3. 
 
-Its uses the [Wicked](https://github.com/schneems/wicked) state machine gem, and [rails_admin](https://github.com/sferik/rails_admin) for admin functions and CMS.
+Its uses the [Wicked](https://github.com/schneems/wicked) state machine gem to guide user input, and [rails_admin](https://github.com/sferik/rails_admin) for admin functions and CMS.
 
 It is intended to be deployed to [Heroku](http://www.heroku.com).
 
-### Getting it running
+### Getting up and running
 
 This assumes you have Ruby 1.9.3 installed using rbenv or rvm, and MySQL running.
 
@@ -36,8 +36,4 @@ bundle exec rails s
 bundle exec rake db:test:prepare
 bundle exec rspec
 ```
-
-### Deploying to Heroku
-
-
 
