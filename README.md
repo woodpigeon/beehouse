@@ -2,6 +2,7 @@
 ## Beehouse
 
 [![Build Status](https://snap-ci.com/CUZU0sq5W67UgZ-Jkstgn1phfjGsKaXd8oY21ukifiQ/build_image)](https://snap-ci.com/projects/woodpigeon/beehouse/build_history)
+[![Code Climate](https://codeclimate.com/github/woodpigeon/beehouse.png)](https://codeclimate.com/github/woodpigeon/beehouse)
 
 ### Overview
 
