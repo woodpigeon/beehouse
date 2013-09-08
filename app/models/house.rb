@@ -1,10 +1,11 @@
 class House < ActiveRecord::Base
   
-  attr_accessible :brand_id, :code, :style, :email, :postcode, :accepted_terms, :state, :tubes
-  attr_accessible :tubes_attributes
+  attr_accessible :brand_id, :code, :style, :email, :postcode
+  attr_accessible :tubes_attributes, :accepted_terms, :state, :tubes
 
   belongs_to :product
   has_many :tubes
+
   accepts_nested_attributes_for :tubes
 
   before_create :generate_uuid
@@ -17,6 +18,8 @@ class House < ActiveRecord::Base
   validates_email_format_of :email, if: :on_personal?
   validates :accepted_terms, :acceptance => {:accept => true}, if: :on_personal?
 
+  COLOURS = %w(pink yellow lavender)
+  MATERIALS = %w(leaf mud empty)
  
   # def on_tubes?
   #   state == 'tubes'
@@ -34,37 +37,28 @@ class House < ActiveRecord::Base
 
     house = House.new(hash)
 
-    # Find the brand and product from the code
     unless house.code.nil?
 
-      product = Product.find_by_range(house.code.to_i)
-      house.product = product unless product.nil?
+      # Find the brand and product from the code
+      house.product = Product.find_by_range(house.code.to_i)
 
-      colors = []
-      colors.concat (1..3).map{ 'pink'}
-      colors.concat (1..3).map{ 'yellow'}
-      colors.concat (1..3).map{ 'lavender'}
-      colors.shuffle!
 
-      materials = []
-      materials.concat (1..3).map{ 'leaf'}
-      materials.concat (1..3).map{ 'empty'}
-      materials.concat (1..3).map{ 'mud'}
-      materials.shuffle!
-
+      nine_colors = create_initial_random_colours_array
+      nine_materials = create_initial_random_materials_array 
     
-      # add the tubes
-      (0..8).each do |i|
-        t =house.tubes.build(position: i, 
-                             colour_code: colors[i], 
-                             bee_code: materials[i])
-        #house.tubes << t
-        
+      # add the 9 tubes with their
+      9.times do |i|
+        house.tubes.build(position: i, 
+                          colour_code: nine_colors[i], 
+                          bee_code: nine_materials[i])
       end
     end
+
     house
 
   end
+
+
 
   def to_param
     self.uuid
@@ -86,6 +80,23 @@ class House < ActiveRecord::Base
   end
 
 
+  private
+
+  def self.create_initial_random_colours_array
+    colours = []
+    COLOURS.each do |c|
+      colours.concat (1..3).map{ c }
+    end
+    colours.shuffle
+  end
+
+  def self.create_initial_random_materials_array
+    materials = []
+    MATERIALS.each do |material|
+      materials.concat (1..3).map { material }  
+    end
+    materials.shuffle
+  end
 
   # state_machine :initial => :s1 do
 
