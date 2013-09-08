@@ -1,7 +1,6 @@
 class Houses::BuildController < ApplicationController
   include Wicked::Wizard
 
-  #steps :tubes, :bees, :personal, :thanks
   steps :bees, :personal, :thanks
 
   def show
@@ -13,11 +12,9 @@ class Houses::BuildController < ApplicationController
   def update
     @house = find_house
     
-    # set so that debugger inspection of step works
-    @current_step = step
-    @next_step = next_step
-    @steps = steps
-
+    # set so that debugger inspection of step works...
+    @current_step, @next_step, @steps = step, next_step, steps
+    
     params[:house][:state] = step.to_s
     
     @house.update_attributes(params[:house])
