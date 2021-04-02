@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/dev-moaning-mini/282b539b-3c22-47bb-86c4-46b79f35f7dc/ce4a772a-71ab-48ae-9fbb-8ecdebd1fb5b/_apis/work/boardbadge/ba9b2e00-9f89-4a00-85fc-523afda2806a)](https://dev.azure.com/dev-moaning-mini/282b539b-3c22-47bb-86c4-46b79f35f7dc/_boards/board/t/ce4a772a-71ab-48ae-9fbb-8ecdebd1fb5b/Microsoft.RequirementCategory)
 
 ## Beehouse
 
