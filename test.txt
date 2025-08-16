@@ -1,0 +1,22 @@
+foreground = yes
+debug = info
+
+[hl7_adt_siu]
+client = no
+accept = 6661
+connect = 7771
+cert = /etc/ssl/certs/cert.pfx   ; no 'key =' line needed
+
+[hl7_oru]
+client = no
+accept = 6662
+connect = 7772
+cert = /etc/ssl/certs/cert.pfx   ; no 'key =' line needed
+
+; Sending documents on an HL7 MDM message back to TIE
+;[client_prod_mirth_mdm]
+;client = yes
+;accept = 127.0.0.1:7777
+;connect = 10.146.41.36:50202
+;verifyPeer = yes
+;CAFile = stunnel.crt
