@@ -13,12 +13,12 @@ debug = info
 client = no
 accept = 6661
 connect = 7771
-cert = /etc/ssl/certs/cert.pem
-CAfile = /etc/ssl/certs/clients-ca.pem
+cert = /etc/ssl/certs/stunnel.pem
+CAfile = /etc/ssl/certs/stunnel-ca.pem
 
 [hl7_oru]
 client = no
 accept = 6662
 connect = 7772
-cert = /etc/ssl/certs/cert.pem
-CAfile = /etc/ssl/certs/clients-ca.pem
+cert = /etc/ssl/certs/stunnel.pem
+CAfile = /etc/ssl/certs/stunnel-ca.pem
