@@ -1,0 +1,32 @@
+
+#!/bin/sh -e
+
+export BASE64_ENCODED_PFX_SECRET_PATH="/mnt/secrets/tls-pfx-b64"
+export SSL_PATH="/etc/ssl/certs"
+export PFX_PATH="${SSL_PATH}/stunnel.pfx"
+export CRT_PATH="${SSL_PATH}/stunnel.crt"
+export KEY_PATH="${SSL_PATH}/stunnel.key"
+export PEM_PATH="${SSL_PATH}/stunnel.pem"
+export CA_PEM_PATH="${SSL_PATH}/stunnel-ca.pem"
+
+# Base64-decode the PFX secret (Azure has removed the password already)
+# and write decoded pfx to /etc/ssl/certs
+base64 -d ${BASE64_ENCODED_PFX_SECRET_PATH} > ${PFX_PATH}
+
+# Extract the cert form the pfx
+openssl pkcs12 -in ${PFX_PATH} -clcerts -nokeys -out ${CRT_PATH} -passin pass:
+
+# Extract the key from the pfx
+openssl pkcs12 -in ${PFX_PATH} -nocerts -out ${KEY_PATH} -passin pass: -passout pass:tmp
+
+# Remove password from the key (?)
+openssl rsa -in ${KEY_PATH} -out ${KEY_PATH} -passin pass:tmp
+
+# Extract CA certs
+openssl pkcs12 -in ${PFX_PATH} -cacerts -nokeys -out ${CA_PEM_PATH} -passin pass:,
+
+# Combine key and cert into a single pem to keep stunnel happy
+RUN cat ${KEY_PATH} ${CRT_PATH} > ${PEM_PATH}
+
+# Make sure keyfile and pem (containing key and cert) are not accessible by others
+RUN chmod 600 ${KEY_PATH} ${PEM_PATH}
