@@ -1,22 +1,24 @@
 foreground = yes
 debug = info
 
+; This 'server' definition listens for TCP connections on port <accept> - ie
+; a remote connection from the TIE system - and forwards the message
+; on to whoever is listening on local port <connect>, which should be Mirth.
+; So its interesting to note that while MSE think they are sending ADT
+; messages to Mirth on 6661, Mirth is actually listening on 7771.
+; The sender has used the public certificate (crt) to encrypt the message so
+; we use our private key to unencrypt it. We are essentially terminating a TLS
+; connection.
 [hl7_adt_siu]
 client = no
 accept = 6661
 connect = 7771
-cert = /etc/ssl/certs/cert.pfx   ; no 'key =' line needed
+cert = /etc/ssl/certs/cert.pem              ; cert+key combined (PEM)
+CAfile = /etc/ssl/certs/clients-ca.pem      ; trust bundle for client certs
 
 [hl7_oru]
 client = no
 accept = 6662
 connect = 7772
-cert = /etc/ssl/certs/cert.pfx   ; no 'key =' line needed
-
-; Sending documents on an HL7 MDM message back to TIE
-;[client_prod_mirth_mdm]
-;client = yes
-;accept = 127.0.0.1:7777
-;connect = 10.146.41.36:50202
-;verifyPeer = yes
-;CAFile = stunnel.crt
+cert = /etc/ssl/certs/cert.pem              ; cert+key combined (PEM)
+CAfile = /etc/ssl/certs/clients-ca.pem      ; trust bundle for client certs
